@@ -4,7 +4,12 @@ const db = config.get('mongoURI'); // should get value form db.js
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }); 
+    await mongoose.connect(
+      db, { 
+        useNewUrlParser: true, 
+        useUnifiedTopology: true, 
+        useCreateIndex: true 
+    }); 
     // returns a promise so can put await in front of it, have to add the above objects otehrwise get depracation warnings
     console.log('MongoDB connected');
   } catch(err) {
