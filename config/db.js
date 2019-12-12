@@ -8,7 +8,8 @@ const connectDB = async () => {
       db, { 
         useNewUrlParser: true, 
         useUnifiedTopology: true, 
-        useCreateIndex: true 
+        useCreateIndex: true ,
+        useFindAndModify: false // may not need it
     }); 
     // returns a promise so can put await in front of it, have to add the above objects otehrwise get depracation warnings
     console.log('MongoDB connected');
