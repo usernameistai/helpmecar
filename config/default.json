@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://tai:Tai%2D31415@helpme-wojjg.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "iwishforahappyexistence"
+  "jwtSecret": "iwishforahappyexistence",
+  "githubClientId": "d7bdf2fbb39411f95a47",
+  "githubSecret": "b9fa367b9abfd1a8c3c478792bc68dfed2c43dc8"
 }
