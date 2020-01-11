@@ -39,3 +39,13 @@ module.exports = connectDB;
 	"mongoURI": "the connecting string"
 }
 ====== server.js
+
+
+blah blah blah blah blah ... . . . . . ... .. .. .. .. .
+
+npm uninstall -g create-react-app as was installed globally and doesn't work like thta now
+
+npx create-react-app client
+
+$ npm i --save axios react-router-dom redux react-redux redux-thunk redux-devtools-extention momen
+t react-moment
