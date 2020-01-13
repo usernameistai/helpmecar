@@ -7,7 +7,7 @@ const Navbar = () => {
       <h1>
         <Link to='/'>
           <i className='fas fa-hands'></i> <Fragment></Fragment>
-          <i class='fas fa-car-alt'></i> <Fragment></Fragment>
+          <i className='fas fa-car-alt'></i> <Fragment></Fragment>
           HelpMe - Car        
         </Link>
       </h1>
