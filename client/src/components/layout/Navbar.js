@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to='/login'>Login</Link></li>
       </ul>
     </nav>
-  )
+  );
 }
 
 export default Navbar;

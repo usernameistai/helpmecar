@@ -49,10 +49,10 @@ const Register = () => {
             onChange={e => onChange(e)}
             required
           />
-          <small className='form-text'
-            >This site uses Gravatar so if you want a profile image, use a
-            Gravatar email</small
-          >
+          <small className='form-text'>
+            This site uses Gravatar so if you want a profile image, use a
+            Gravatar email
+          </small>
         </div>
         <div className='form-group'>
           <input

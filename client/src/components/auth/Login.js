@@ -9,9 +9,9 @@ const Login = () => {
 
   const { email, password } = formData;
 
- const onChange = e => setFormData({
-    ...formData, // spread operator copy what's in there
-    [e.target.name]: e.target.value // rather than name means we can use name for every field
+  const onChange = e => setFormData({
+    ...formData, 
+    [e.target.name]: e.target.value 
   });
 
   const onSubmit = async e => {
