@@ -56,7 +56,7 @@ router.post('/',
         user: {
           id: user.id // mongodb uses _id, mongoose uses abstraction
         }
-      }
+      };
 
       jwt.sign(
         payload, 

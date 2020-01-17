@@ -8,8 +8,8 @@ import Alert from './components/layout/Alert';
 // Redux
 import { Provider } from 'react-redux'; // connects the two
 import store from './store';
-import setAuthToken from './utils/setAuthToken';
 import { loadUser } from './actions/auth';
+import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
