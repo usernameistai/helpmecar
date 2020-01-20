@@ -1,5 +1,4 @@
 // This is a good way of having routes that require logins
-
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
