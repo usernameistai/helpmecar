@@ -36,7 +36,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => { // destructured,
   return (
     <Fragment>
       <h1 className='large text-primary'>Sign Up</h1>
-      <p className='lead'><i className='fas fa-user'></i> Create Your Account</p>
+      <p className='lead'><i className='fas fa-car'></i> Create Your Account</p>
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <input 
