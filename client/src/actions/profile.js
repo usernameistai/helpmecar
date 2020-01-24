@@ -20,7 +20,7 @@ export const getCurrentProfile = () => async dispatch => {
       type: GET_PROFILE,
       payload: res.data
     });
-    console.log(res.data);
+
   } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
@@ -58,7 +58,7 @@ export const getProfileById = userId => async dispatch => {
       type: GET_PROFILE,
       payload: res.data
     });
-    console.log(res.data);
+
   } catch (err) {
     dispatch({
       type: PROFILE_ERROR,

@@ -8,9 +8,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>
-          Helpers
-        </Link>
+        <Link to='/profiles'>Helpers</Link>
       </li>
       <li>
         <Link to='/dashboard'>
@@ -44,12 +42,12 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
           HelpMe - Car        
         </Link>
       </h1>
-      { !loading && 
-        (<Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>)
-      }
+      { !loading && (
+        <Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>
+      )}
     </nav>
   );
-}
+};
 
 Navbar.propTypes = {
   logout: PropTypes.func.isRequired,

@@ -8,14 +8,13 @@ import { getProfiles } from '../../actions/profile';
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
     getProfiles();
-  }, [getProfiles]);
+  }, [getProfiles]); // should put profiles in the state
 
   return (
     <Fragment>
-      { loading 
-        ? (
-          <Spinner />
-        ) : (
+      { loading ? (
+        <Spinner />
+      ) : (
         <Fragment>
           <h1 className='large text-primary'>Helpers</h1>
           <p className='lead'>

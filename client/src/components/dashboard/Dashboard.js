@@ -18,16 +18,17 @@ const Dashboard = ({
     getCurrentProfile();
   }, [getCurrentProfile]);
 
-  return loading && profile === null 
-    ? <Spinner /> 
-    : <Fragment>
-      <h1 className='large text-primary'>This is your Dashboard</h1>
-      <p className='lead'>
-        <i className='fas fa-car-alt'></i>{' '}
-         Welcome Helper { user && user.name }
-      </p>
-      {profile !== null 
-        ? <Fragment>
+  return loading && profile === null ? ( 
+      <Spinner />
+    ) : ( 
+      <Fragment>
+        <h1 className='large text-primary'>This is your Dashboard</h1>
+        <p className='lead'>
+          <i className='fas fa-car-alt'></i>{' '}
+          Welcome Helper { user && user.name }
+        </p>
+        {profile !== null ? ( 
+          <Fragment>
             <DashboardActions />
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
@@ -37,13 +38,15 @@ const Dashboard = ({
                 <i className="fas fa-user-minus"></i> Delete the account then
               </button>
             </div>
-          </Fragment> 
-        : <Fragment>
-            <p>Need to add to your profile amigo, share your helpful ways</p>
-            <Link to='/create-profile' className='btn btn-primary my-1'> Add to profile</Link>
           </Fragment>
-      }
-    </Fragment>;
+        ) : ( 
+          <Fragment>
+              <p>Need to add to your profile amigo, share your helpful ways</p>
+              <Link to='/create-profile' className='btn btn-primary my-1'> Add to profile</Link>
+          </Fragment>
+        )}
+      </Fragment>
+    );
 };
 
 Dashboard.propTypes = {
