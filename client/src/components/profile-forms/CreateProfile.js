@@ -96,7 +96,7 @@ const CreateProfile = ({
 						onChange={e => onChange(e)}
 					/>
 					<small className='form-text'>
-						Could be your own or a company website
+						Could be your own (please add https:// or http://)
 					</small>
 				</div>
 				<div className='form-group'>
@@ -163,7 +163,7 @@ const CreateProfile = ({
 							<i className='fab fa-twitter fa-2x' />
 							<input
 								type='text'
-								placeholder='Twitter URL'
+								placeholder='Twitter URL, please include https:// at the start'
 								name='twitter'
 								value={twitter}
 								onChange={e => onChange(e)}
@@ -174,7 +174,7 @@ const CreateProfile = ({
 							<i className='fab fa-facebook fa-2x' />
 							<input
 								type='text'
-								placeholder='Facebook URL'
+								placeholder='Facebook URL, please include https:// at the start'
 								name='facebook'
 								value={facebook}
 								onChange={e => onChange(e)}
@@ -185,7 +185,7 @@ const CreateProfile = ({
 							<i className='fab fa-youtube fa-2x' />
 							<input
 								type='text'
-								placeholder='YouTube URL'
+								placeholder='YouTube URL, please include https:// at the start'
 								name='youtube'
 								value={youtube}
 								onChange={e => onChange(e)}
@@ -196,7 +196,7 @@ const CreateProfile = ({
 							<i className='fab fa-linkedin fa-2x' />
 							<input
 								type='text'
-								placeholder='Linkedin URL'
+								placeholder='Linkedin URL, please include https:// at the start'
 								name='linkedin'
 								value={linkedin}
 								onChange={e => onChange(e)}
@@ -207,7 +207,7 @@ const CreateProfile = ({
 							<i className='fab fa-instagram fa-2x' />
 							<input
 								type='text'
-								placeholder='Instagram URL'
+								placeholder='Instagram URL, please include https:// at the start'
 								name='instagram'
 								value={instagram}
 								onChange={e => onChange(e)}

@@ -44,7 +44,7 @@ const EditProfile = ({
       linkedin: loading || !profile.social ? '' : profile.social.linkedin,
       youtube: loading || !profile.social ? '' : profile.social.youtube,
       instagram: loading || !profile.social ? '' : profile.social.instagram
-    }); // eslint-disable-next-line
+    }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, getCurrentProfile]);
 
   const {
@@ -116,7 +116,7 @@ const EditProfile = ({
 						onChange={e => onChange(e)}
 					/>
 					<small className='form-text'>
-						Could be your own or a company website
+						Could be your own (please add https:// or http://)
 					</small>
 				</div>
 				<div className='form-group'>

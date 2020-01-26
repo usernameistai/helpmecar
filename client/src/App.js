@@ -58,4 +58,10 @@ const App = () => {
 // Provider means all the components that we create can access our 
 // app level state 
 
+// Redux working mechanism. In essence, the action is 
+// called on a component will then dispatch the action with its type and 
+// payload to the reducer, the reducer will then match that action's type 
+// with the predefined case pertain to that action and make changes to the 
+// state accordingly.
+
 export default App;

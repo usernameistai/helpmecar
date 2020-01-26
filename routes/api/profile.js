@@ -62,11 +62,31 @@ router.post('/',
 
     // build social object
     profileFields.social = {};
-    if(youtube) profileFields.social.youtube = youtube;
-    if(twitter) profileFields.social.twitter = twitter;
-    if(facebook) profileFields.social.facebook = facebook;
-    if(linkedin) profileFields.social.linkedin = linkedin;
-    if(instagram) profileFields.social.instagram = instagram;
+    // if(youtube) profileFields.social.youtube = youtube;
+    if(youtube) {
+      youtube.includes('http://') || youtube.includes('https://') 
+      ? profileFields.social.youtube = youtube 
+      : profileFields.social.youtube = `http://${youtube}`};
+    if(twitter) {
+      twitter.includes('http://') || twitter.includes('https://') 
+      ? profileFields.social.twitter = twitter 
+      : profileFields.social.twitter = `http://${twitter}`};
+    // if(twitter) profileFields.social.twitter = twitter;
+    if(facebook) {
+      facebook.includes('http://') || facebook.includes('https://') 
+      ? profileFields.social.facebook = facebook 
+      : profileFields.social.facebook = `http://${facebook}`};
+    // if(facebook) profileFields.social.facebook = facebook;
+    if(linkedin) {
+      linkedin.includes('http://') || linkedin.includes('https://') 
+      ? profileFields.social.linkedin = linkedin 
+      : profileFields.social.linkedin = `http://${linkedin}`};
+    // if(linkedin) profileFields.social.linkedin = linkedin;
+    if(instagram) {
+      instagram.includes('http://') || instagram.includes('https://') 
+      ? profileFields.social.instagram = instagram 
+      : profileFields.social.instagram = `http://${instagram}`};
+    // if(instagram) profileFields.social.instagram = instagram;
 
     try {
       let profile = await Profile.findOne({ user: req.user.id });
