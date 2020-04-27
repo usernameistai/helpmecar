@@ -8,6 +8,12 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
+        <Link to='/reg'>
+          <i className='fas fa-car-alt'></i>{' '}
+          <span className="hide-sm">CarHelp</span>
+        </Link>
+      </li>
+      <li>
         <Link to='/profiles'>
           <i className='fas fa-hands'></i>{' '}
           <span className="hide-sm">Helpers</span>
@@ -36,6 +42,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   const guestLinks = (
     <ul>
+      <li><Link to='/reg'>CarHelp</Link></li>
       <li><Link to='/profiles'>Helpers</Link></li>
       <li><Link to='/register'>Register</Link></li>
       <li><Link to='/login'>Login</Link></li>

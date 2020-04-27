@@ -3,8 +3,11 @@ const Schema = mongoose.Schema;
 
 const RegSchema = new Schema({
   regplate: { // does this need a separate model
+    // type: mongoose.Schema.Types.ObjectId, // could be Schema.Types.ObjectId will have to test
+    // ref: 'regplate'
     type: String,
     required: true
+    // default: null
   },
   brakelightcentre: {
     type: Boolean,

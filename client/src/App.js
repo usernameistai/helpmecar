@@ -14,6 +14,10 @@ import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
+import Reg from './components/reg/Reg';
+import RegForm from './components/reg/RegForm';
+import SearchReg from './components/reg/SearchReg';
+import ShowReg from './components/reg/ShowReg';
 import PrivateRoute from './components/routing/PrivateRoute';
 // Redux
 import { Provider } from 'react-redux'; // connects the two
@@ -52,6 +56,10 @@ const App = () => {
               <PrivateRoute exact path='/add-education' component={ AddEducation } />
               <PrivateRoute exact path='/posts' component={ Posts } />
               <PrivateRoute exact path='/posts/:id' component={ Post } />
+              <Route exact path='/reg' component={ Reg } />
+              <Route exact path='/reg-form' component={ RegForm } />
+              <Route exact path='/reg-search' component={ SearchReg } />
+              <Route exact path='/reg-search/:id' component={ ShowReg } />
             </Switch>
           </section>
         </Fragment>

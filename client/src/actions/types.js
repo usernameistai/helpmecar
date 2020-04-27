@@ -22,4 +22,8 @@ export const DELETE_POST = 'DELETE_POST';
 export const ADD_POST = 'ADD_POST';
 export const ADD_COMMENT = 'ADD_COMMENT';
 export const REMOVE_COMMENT = 'REMOVE_COMMENT';
-
+export const ADD_REG = 'ADD_REG';
+export const REMOVE_REG = 'REMOVE_REG';
+export const REG_ERROR = 'REG_ERROR';
+export const GET_REG = 'GET_REG';
+export const CLEAR_REG = 'CLEAR_REG';
