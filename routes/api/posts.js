@@ -55,7 +55,7 @@ router.get('/', auth, async (req, res) => {
 // @access   Private
 router.get('/:id', auth, async (req, res) => {
   try {
-    const post = await Post.findById(req.params.id);
+    const post = await Post.findById(req.params.id); // get from URL
 
     if(!post) {
       return res.status(404).json({ msg: 'Post not found' });

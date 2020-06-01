@@ -4,7 +4,8 @@
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
-  --success-color: #28a745;
+  --success-color: #2ecc40;
+  /* #28a745 */
 }
 
 * {
@@ -51,6 +52,29 @@ img {
   padding: 0 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.container-reg2 {
+  max-width: 100vw;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-width: 0 5px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 1px 1px 12px -5px #888;
+}
+
+.container-reg3 {
+  background-color: #fff;
+  opacity: 0.88;
+  height: 20vh;
+  width: 100%;
+  margin: -1rem auto;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 12px -5px #888;
 }
 
 /* Text Styles*/
@@ -217,6 +241,8 @@ img {
 
 .btn:hover {
   opacity: 0.8;
+  box-shadow: 1px 1px 12px -5px #333;
+  transform: scale(1.025);
 }
 
 .bg-light,
@@ -242,6 +268,44 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Footer */
+.fm {
+  margin: 1.5rem 0;
+}
+
+.fbc {
+  background: var(--primary-color);
+  margin: 0;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* foot icon colour */
+.fic {
+  color: #dddddd;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 1px 1px 12px -5px #333;
+  padding: 1.6rem 0.8rem 0.8rem 0.8rem;
+  margin: 1rem;
+}
+
+.fcb {
+  background-color: #126a77;
+  margin: 2rem 0rem;
+  padding: 1.25rem;
+}
+
+.fcc {
+  color: #dddddd;
 }
 
 /* Forms */
@@ -335,6 +399,7 @@ button {
 
 .navbar a:hover {
   color: var(--primary-color);
+  transform: scale(1.25);
 }
 
 .navbar .welcome span {
@@ -487,6 +552,8 @@ button {
   grid-template-columns: 1fr 4fr;
   grid-gap: 2rem;
   align-items: center;
+  box-shadow: 1px 1px 12px -5px #888;
+  border-radius: 8px;
 }
 
 .post > div:first-child {
@@ -512,27 +579,71 @@ button {
 }
 
 .reg {
-  display: flex;
-  flex: 0 0 33.333%;
-  /* overflow: auto hidden; */
+  display: grid;
+  grid-template-areas:
+    'search help other';
+  grid-gap: 0.8rem;
   list-style: outside none none;
   margin-top: 0;
-  margin-bottom: 5rem;
   justify-content: center;
 }
 
+#search {
+  grid-area: search;
+}
+
+#help {
+  grid-area: help;
+}
+
+#other {
+  grid-area: other;
+}
+
+.reg-img1 {
+  background-image: url(./components/layout/car_search.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  /* width: 100%; */
+  margin: 0;
+  /* max-width: 200%; */
+  padding-top: 2rem;
+}
+
+.reg-img2 {
+  background-image: linear-gradient(rgba(245, 245, 245, 0.125), rgba(245, 245, 245, 0.125)),
+    url(./components/layout/multi_car.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin: -4rem -2rem 1rem -2rem;
+  padding: 0;
+  max-width: 300%;
+}
+
 .reg-item {
-  max-width: 33.333%;
-  /* box-sizing: border-box; */
-  margin-top: 3rem;
-  margin-left: 5px;
-  margin-right: 5px;
+  max-width: 95%;
+  max-height: 100%;
+  opacity: 0.95;
+  margin-top: 3.5rem;
+  margin-left: 7px;
+  margin-right: 7px;
   padding: 0.7rem;
   border-width: 0 5px;
   border-radius: 8px;
   border-style: solid;
   border-color: transparent;
   box-shadow: 1px 1px 12px -5px #888;
+  background-color: #fff;
+}
+
+.reg-item:hover {
+  transition: transform 0.44s ease-in-out;
+  transform: scale(1.125);
+  z-index: 1;
 }
 
 .regform-item {
@@ -550,28 +661,511 @@ button {
   vertical-align: center;
 }
 
+.regrule {
+  display: grid;
+  grid-template-areas: 
+  'px lp'
+  'vp tv'
+  'jd jk'
+  'ccr jg'
+  'pdp dh';
+  grid-gap: 1rem;
+}
+
+.regreg {
+  display: grid;
+  grid-template-areas: 
+  'nft nf'
+  'cb cbt'
+  'tdt td'
+  'bw bwt'
+  'cet ce';
+  grid-gap: 1.5rem;
+}
+
+.regrule-item {
+  max-width: 100%;
+  padding: 1rem;
+  border-width: 0 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 1px 1px 12px -5px #888;
+  text-shadow: 1px 1px 5px #fff;
+  font-size: 1rem;
+  /* justify-content: center;
+  vertical-align: center; */
+}
+
+.regrule-item:hover {
+  transition: transform 0.44s ease-in-out;
+  transform: scale(1.125);
+}
+
+.regreg-item {
+  max-width: 100%;
+  margin: 1rem auto;
+  border-width: 0 5px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.reghelp {
+  display: grid;
+  grid-template-areas: 
+    'at sm'
+    'att smt'
+    'pxh rk'
+    'pxth rkt'
+    'mt pc'
+    'mtt pct';
+  grid-gap: 3rem;
+}
+
+.reghelp:nth-child(even) {
+  grid-template-rows: auto;
+}
+
+.reghelp-item {
+  max-width: 100%;
+  margin: -2rem 1rem 0 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.r {
+  padding: 1rem;
+  margin: auto auto 2rem auto;
+  border-radius: 5px;
+  background-color: #2ecc40;
+  color: #dddddd;
+  text-align: center;
+}
+
+.rrphotos {
+  background-repeat: no-repeat;
+  background-size: 125%;
+  height: 275px;
+  width: 375px;
+  margin: 1rem auto;
+  background-position: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px  #333;
+  opacity: 0.88;
+}
+
+.rhphotos {
+  background-repeat: no-repeat;
+  background-size: 137%;
+  background-position: center;
+  margin: 1rem auto;
+  height: 35vh;
+  width: 100%;
+}
+
+.rregphotos {
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border-radius: 8px;
+  margin: 1rem auto;
+  height: 35vh;
+  width: 100%;
+}
+
+#ul {
+  background-image: url('./components/layout/Urban-Landscape.jpeg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px  #333;
+  height: 7.77rem;
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 2.00rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+#uls {
+  font-size: 2rem;
+}
+
+#s {
+  margin: -2rem auto 2rem auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#p {
+  margin: 2rem;
+  color: #4d5863;
+}
+
+#px {
+  background-image: url(./components/layout/pan-xiaozhen.jpg);
+  color: #ff851b;
+  font-size: 1.88rem;
+  grid-area: px;
+}
+
+#lp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), 
+    url(./components/layout/luke-porter.jpg);
+  opacity: 0.88;
+  color: #fff;
+  font-size: 1.88rem;
+  grid-area: lp;
+}
+
+#vp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), 
+    url(./components/layout/vitor-pinto.jpg);
+  opacity: 0.88;
+  color: #fff;
+  font-size: 1.88rem;
+  grid-area: vp;
+}
+
+#tv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)),
+                    url(./components/layout/timo-volz.jpg);
+  opacity: 0.88;
+  color: #ffdc00;
+  font-size: 1.88rem;
+  grid-area: tv;
+}
+
+#jd {
+  background-image: url(./components/layout/jorge-dominguez.jpg);
+  color: #01ff70;
+  font-size: 1.88rem;
+  grid-area: jd;
+}
+
+#jk {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+  url(./components/layout/jan-kopriva.jpg);
+  opacity: 0.88;
+  color: #fff;
+  font-size: 1.88rem;
+  grid-area: jk;
+}
+
+#ccr {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./components/layout/caspar-camille-rubin.jpg);
+  opacity: 0.88;
+  color: #fff;
+  font-size: 1.88rem;
+  grid-area: ccr;
+}
+
+#jg {
+  background-image:  url(./components/layout/josh-gordon.jpg);
+  opacity: 0.88;
+  color: #7fdbff;
+  font-size: 1.88rem;
+  grid-area: jg;
+}
+
+#pdp {
+  background-image: url(./components/layout/priscilla-du-preez.jpg);
+  color: #ff851b;
+  font-size: 1.88rem;
+  grid-area: pdp;
+}
+
+#dh {
+  background-image: url(./components/layout/david-hurley.jpg);
+  color: #85144b;
+  font-size: 1.88rem;
+  grid-area: dh;
+}
+
+#nft {
+  grid-area: nft;
+}
+
+#nf {
+  background-image: url(./components/layout/nick-fewings.jpg);
+  color: #85144b;
+  font-size: 1.88rem;
+  grid-area: nf;
+}
+
+#cbt {
+  grid-area:cbt;
+}
+
+#cb {
+  background-image: url(./components/layout/christopher-burns.jpg);
+  color: #fff;
+  font-size: 1.88rem;
+  grid-area: cb;
+}
+
+#tdt {
+  grid-area: tdt;
+}
+
+#td {
+  background-image: url(./components/layout/tarun-dhiman.jpg);
+  background-size: 165%;
+  grid-area: td;
+}
+
+#bwt {
+  grid-area: bwt
+}
+
+#bw {
+  background-image: url(./components/layout/ben-white.jpg);
+  grid-area: bw;
+}
+
+#cet {
+  grid-area: cet;
+}
+
+#ce {
+  background-image: url(./components/layout/charles-etoroma.jpg);
+  grid-area: ce;
+}
+
+.credits {
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#at {
+  background-image: url(./components/layout/artur-tumasjan.jpg);
+  grid-area: at;
+}
+
+#att {
+  grid-area: att;
+}
+
+#sm {
+  background-image: url(./components/layout/sincerely-media.jpg);
+  background-size: 110%;
+  grid-area: sm;
+}
+
+#smt {
+  grid-area: smt;
+}
+
+#pxh {
+  background-image: url(./components/layout/pan-xiaozhen.jpg);
+  grid-area: pxh;
+}
+
+#pxth {
+  grid-area: pxth;
+}
+
+#rk {
+  background-image: url(./components/layout/rosie-kerr.jpg);
+  grid-area: rk;
+}
+
+#rkt {
+  grid-area: rkt;
+}
+
+#mt {
+  background-image: url(./components/layout/mareko-tamaleaa.jpg);
+  grid-area: mt;
+}
+
+#mtt {
+  grid-area: mtt;
+}
+
+#pc {
+  background-image: url(./components/layout/pawel-czerwinski.jpg);
+  background-size: 125%;
+  grid-area: pc;
+}
+
+#pct {
+  grid-area: pct;
+}
+
+.showreg {
+  margin: 1rem;
+}
+
 .reg-link {
   /* text-align: center; */
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem auto 0.5rem auto;
 }
 
 .reg-two {
+  display: grid;
+  grid-template-areas:
+    'site site'
+    'carrules comb'
+  ;
+  grid-gap: 1.5rem;
   color: #fff;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  padding: 2rem;
+  margin: -2rem -5rem 0 -2rem;
+  padding: 2rem 3rem;
 }
 
 .reg-3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+#site {
+  grid-area: site;
+  /* width: 85%; */
+}
+#carrules {
+  grid-area: carrules;
+  width: 50%;
+}
+#carimg {
+  grid-area: comb;
+  /* max-height: 75vw; */
+  max-width: 75%;
+}
+/* #carhelp{
+  grid-area: carhelp;
+  width: 45%;
+}
+#carsearch{
+  grid-area: carsearch;
+  width: 45%;
+}
+#carsafety{
+  grid-area: carsafety;
+  width: 45%;
+}
+#carreturn{
+  grid-area: carreturn;
+  width: 45%;
+} */
+
+.reg-four {
+  background-image: url(./components/layout/english_combine_harvester.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  border-radius: 8px;
+  /* box-shadow: 1px 1px 12px 5px #fff; */
+  filter: drop-shadow(-5px -5px 12px #fff);
+  text-shadow: 1px 1px 5px #888;
+  /* margin: 0; */
+  margin: 0 -2rem 0 -18rem;
+  padding: 1rem;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#accidents {
+  background-image: url(./components/layout/accidents.jpg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  height: 25rem;
+  width: auto;
+  margin: -0.5rem -1rem;
+}
+
+#accidents2 {
+  background-image: url(./components/layout/RAS20002.jpg);
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: center;
+  height: 50rem;
+  /* width: auto; */
+  /* margin: auto; */
+}
+
+#ol {
+  margin: 0.125rem 11.25rem 0.125rem 10.25rem; 
+  font-size: 7px;
+}
+#sp {
+  float: right;
+}
+#car-d {
+  background-image: url(./components/layout/car-density.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  height: 50rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 991.98px) {
+  .regrule {
+    grid-template-areas: 
+    'px'
+    'lp'
+    'vp'
+    'tv'
+    'jd'
+    'jk'
+    'ccr'
+    'jg'
+    'pdp'
+    'dh';
+  }
+  .hide-sm {
+    display: none;
+  }
+}
+
 /* Mobile Styles */
-@media (max-width: 700px) {
+@media (max-width: 767.98px) {
   .container {
     margin-top: 8rem;
+  }
+
+  .container-reg2 {
+    max-width: 100%;
+  }
+
+  .container-reg3 {
+    height: 35vh;
+  }
+
+  #accidents {
+    background-size: 85%;
+    height: 13rem;
+    width: 90%;
+    margin: -1.25rem 0 -1.25rem 0;
+    padding: 0 -1rem;
+  }
+  #accidents2 {
+    background-size: 100%;
+    height: 17rem;
+    width: auto;
+    margin: -1rem -1.5rem 1.5rem -1.5rem;
+  }
+  #ol {
+    margin: 0.25rem 0;
+    font-size: 0.25rem;
+  }
+  #car-d {
+    background-size: 150%;
+    height: 20rem;
+    width: auto;
+    margin: -1rem 0;
   }
 
   .hide-sm {
@@ -600,9 +1194,11 @@ button {
   .navbar ul {
     text-align: center;
     justify-content: center;
+    margin: 0 auto 0  -2rem;
   }
 
   .navbar h1 {
+    margin-left: -2rem;
     margin-bottom: 1rem;
   }
 
@@ -654,4 +1250,182 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+
+  .reg {
+    grid-template-areas: 
+      'help'
+      'search'
+      'other';
+  }
+
+  .reg-two {
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      'site'
+      'carrules'
+      'comb';
+    height: 125%;
+    width: 100vw;
+    margin-top: 1rem;
+  }
+  #carrules {
+    width: 100%;
+    height: 100%;
+  }
+  #carimg {
+    max-width: 100%;
+  }
+  .reg-four {
+    /* background-size: 125%; */
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    margin: 0rem auto 10rem auto;
+    padding: -2rem;
+    text-shadow: 1px 1px 5px #888;
+  }
+  .reg-link {
+    margin: 1rem auto 0.5rem auto;
+  }
+
+  .reg-item {
+    margin: 3rem auto -3rem auto;
+    padding: 0.25rem 0.25rem 0 0.25rem;
+    max-width: 85%;
+    max-height: 33vh;
+  }
+
+  .regrule {
+    grid-template-areas: 
+    'px'
+    'lp'
+    'vp'
+    'tv'
+    'jd'
+    'jk'
+    'ccr'
+    'jg'
+    'pdp'
+    'dh';
+  }
+
+  #ul {
+    font-size: 1.25rem;
+    background-size: cover;
+  }
+
+  #px, #lp, #vp, #tv, #jd, #jk, #ccr, #jg, #pdp, #dh {
+    font-size: 1.33rem;
+  }
+
+  .rrphotos {
+    max-height: 50vh;
+    max-width: 65vw;
+    background-size: cover;
+    font-size: 1.25rem;
+  }
+
+  .regreg {
+    grid-template-areas: 
+    'nft'
+    'nf'
+    'cbt'
+    'cb'
+    'tdt'
+    'td'
+    'bwt'
+    'bw'
+    'cet'
+    'ce';
+  }
+
+  .regreg-item {
+    font-size: 1.22rem;
+    margin: auto;
+    max-width: 85%;
+  }
+
+  .rregphotos {
+    margin: 0 auto;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .btnrules {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .msm {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .reghelp {
+    grid-template-areas: 
+    'at'
+    'att'
+    'sm'
+    'smt'
+    'pxh'
+    'pxth'
+    'rk'
+    'rkt'
+    'mt'
+    'mtt'
+    'pc'
+    'pct';
+    margin: 1rem auto 0 1rem;
+  }
+
+  .reghelp-item {
+    max-width: 70vw;
+    margin: -2rem auto -2rem auto;
+    padding: 0rem;
+    font-size: 1.125rem;
+  }
+
+  .credits {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  #accidents {
+    background-size: 150%;
+  }
+
+  .fbc {
+    margin: 1rem -2rem -2rem -2rem;
+    padding: 0.5rem;
+    padding: 0.05rem 0 0 0;
+  }
+
+  .fic {
+    margin: -0.75rem 0.25rem 0 0.25rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .fcb {
+    padding: 0.5rem;
+  }
+
+  .fa-facebook-f {
+    font-size: 1.77rem;
+  }
+  .fa-twitter {
+    font-size: 1.77rem;
+  }
+  .fa-google-plus {
+    font-size: 1.77rem;
+  }
+  .fa-linkedin-in {
+    font-size: 1.77rem;
+  }
+  .fa-instagram {
+    font-size: 1.77rem;
+  }
+  .fa-pinterest {
+    font-size: 1.77rem;
+  }
+  
 }

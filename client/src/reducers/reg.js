@@ -38,7 +38,7 @@ export default function(state = initialState, action) {
       return {
         ...state,
         reg: null,
-        regplate: '', 
+        regplate: '', // or an empty {} object
         loading: false
       };
     default:

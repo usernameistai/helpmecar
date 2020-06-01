@@ -38,7 +38,7 @@ export const getReg = regId => async dispatch => {
   try {
     // dispatch({ type: CLEAR_REG });
 
-    const res = await axios.get(`/api/reg/reg-search/${regId}`); // was const res = await // got rid of Cast to ObjectId failed for value "undefined" at path "_id" for model "reg" adding /reg/reg/...
+    const res = await axios.get(`/api/reg/reg-search/${regId}`);
 
     dispatch({
       type: GET_REG,
@@ -54,13 +54,13 @@ export const getReg = regId => async dispatch => {
 };
 
 // Delete Reg
-export const deleteReg = id => async dispatch => {
+export const deleteReg = regId => async dispatch => {
   try {
-    axios.delete(`/api/reg/${id}`);
+    axios.delete(`/api/reg/reg-search/${regId}`);
 
     dispatch({
       type: REMOVE_REG,
-      payload: id
+      payload: regId
     });
 
     dispatch(setAlert('Registration removed from db', 'Success'));

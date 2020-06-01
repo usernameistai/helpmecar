@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import FooterPagePro from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
@@ -18,7 +19,11 @@ import Reg from './components/reg/Reg';
 import RegForm from './components/reg/RegForm';
 import SearchReg from './components/reg/SearchReg';
 import ShowReg from './components/reg/ShowReg';
+import RegRules from './components/reg/RegRules';
+import RegHelp from './components/reg/RegHelp';
+import RegSafety from './components/reg/RegSafety';
 import PrivateRoute from './components/routing/PrivateRoute';
+
 // Redux
 import { Provider } from 'react-redux'; // connects the two
 import store from './store';
@@ -41,8 +46,8 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <Route exact path='/' component={ Landing } />
-          <section className="container">
+          <Route exact={true} path='/' component={ Landing } /> {/* added exact={true} */}
+          <section className='container'>
             <Alert />
             <Switch>
               <Route exact path='/register' component={ Register } />
@@ -60,8 +65,12 @@ const App = () => {
               <Route exact path='/reg-form' component={ RegForm } />
               <Route exact path='/reg-search' component={ SearchReg } />
               <Route exact path='/reg-search/:id' component={ ShowReg } />
+              <Route exact path='/reg-rules' component={ RegRules } />
+              <Route exact path='/reg-help' component={ RegHelp } />
+              <Route exact path='/reg-safety' component={ RegSafety } />
             </Switch>
           </section>
+          <FooterPagePro />
         </Fragment>
       </Router>
     </Provider>

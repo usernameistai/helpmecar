@@ -19,7 +19,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           <h1 className='large text-primary'>Helpers</h1>
           <p className='lead'>
             <i className='fab fa-connectdevelop' /> Browse and connect with
-            other helpers of different levels
+            other helpers
           </p>
           <div className='profiles'>
             {profiles.length > 0 ? (

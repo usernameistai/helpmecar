@@ -31,12 +31,13 @@ const RegForm = ({ addReg, reg, regId }) => {
     addReg(formData);
     alert(`Thank you for helping ${regplate}`);
     setFormData(''); // added this might have to include every option for reg.regplate, reg.brakelightcentre2x
-    window.location=`/reg-search/${regId}`;
+    window.location='/reg';
   };
 
   return (
     <Fragment>
-      <div className='container-reg'>
+      <h2 className='large text-primary'>HelpMe - Human</h2>
+      <div className='container-reg2'>
         <div className='form'>
           <div className='title text-primary'><h1>Help Your Fellow Humans Out</h1></div>
           <form className='form' onSubmit={e => onSubmit(e)} action='/reg'>
@@ -65,7 +66,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, brakelightcentre: !brakelightcentre});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Central Brake Light {''}</label>
+                  />{''} Central Brake Light Out {''}</label>
                 </div>
                 <div>
                   <label><input 
@@ -77,7 +78,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, brakelightleft: !brakelightleft});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Left Brake Light {''}</label>
+                  />{''} Left Brake Light Out {''}</label>
                 </div>
                 <div>
                   <label><input 
@@ -89,7 +90,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, brakelightright: !brakelightright});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Right Brake Light {''}</label>
+                  />{''} Right Brake Light Out {''}</label>
                 </div>
               </div>
               <br />
@@ -105,7 +106,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, lightleft: !lightleft});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Left Rear Light {''}</label>
+                  />{''} Left Rear Light Out {''}</label>
                 </div>
                 <div>
                   <label><input 
@@ -117,7 +118,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, lightright: !lightright});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Right Rear Light {''}</label>
+                  />{''} Right Rear Light Out {''}</label>
                 </div>
                 <div>
                   <label><input 
@@ -129,7 +130,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                       setFormData({ ...formData, reglight: !reglight});
                       toggleDisabled(!checkDisabled);
                     }} 
-                  />{''} Registration Number Light {''}</label>
+                  />{''} Registration Number Plate Light Out {''}</label>
                 </div>
               </div>
               <br />

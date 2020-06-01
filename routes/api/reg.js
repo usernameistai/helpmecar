@@ -32,7 +32,7 @@ router.get('/reg-search/:reg_id', async (req, res) => {
     ];
 
     const reg = await Reg
-      .findOne({ regplate: req.params.reg_id }).populate('reg',  regArr ); // req.params.reg_id / { reg: req.query._id }
+      .findOne({ regplate: req.params.reg_id }).populate('reg',  regArr ); 
     // reg.map(doc => {
     //   regArray.push(doc);
     // });
@@ -42,9 +42,13 @@ router.get('/reg-search/:reg_id', async (req, res) => {
     }
 
     res.json(reg);
-    console.log(mongoose.Types.ObjectId + 'smell smell smelly');
+    // console.log(mongoose.Types.ObjectId + 'smell smell smelly');
+    // res.end();
   } catch (err) {
     console.error(err.message);
+    // if(err.kind === 'ObjectId') {
+    //   return res.status(404).json({ msg: 'Reg not found' });
+    // }
     res.status(500).send('Server Error');
   }
 });
@@ -92,11 +96,11 @@ router.post('/',
   if(roomforimprov) regFields.driver.roomforimprov =  roomforimprov;
 
   try {
-    let reg = await Reg.findOne({ regplate: req.params.id }); // was reg: req.query._id
+    let reg = await Reg.findOne({ regplate: req.params._id }); // was reg: req.query._id
 
     if(reg) {
       reg = await Reg.findOneAndUpdate(
-        // { regplate: req.regplate.id },
+        { regplate: req.params._id },
         { $set: regFields },
         { new: true }
       );
@@ -115,18 +119,16 @@ router.post('/',
 
 // @route    DELETE reg
 // @desc     Delete profile, user & posts
-// @access   Private
-// router.delete('/', async (req, res) => {
-//   try {
-//     // Remove profile
-//     await Reg.findOneAndRemove({ reg: req.reg.id });
-//     // // Remove user
-//     // await User.findOneAndRemove({ _id: req.user.id });
-//     res.json({ msg: 'Registration removed' });
-//   } catch (err) {
-//     console.error(err.message);
-//     res.status(500).send('Server Error');
-//   }
-// });
+// @access   Public
+router.delete('/reg-search/:reg_id', async (req, res) => {
+  try {
+    // Remove reg
+    await Reg.findOneAndRemove({ regplate: req.params.reg_id });
+    res.json({ msg: 'Registration removed' });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
 
 module.exports = router;
