@@ -6,7 +6,7 @@ const RegRules = () => {
     <Fragment>
       <div>
         <h1 className='text-primary large'>Rules & Regulations</h1>
-        <div className='container-reg2'>
+        <div className='container-reg4'>
           <h2 className='large r'>Rules <span id='uls'>(Please don't break them)</span> </h2>
           <h3 className='regrule-item rrphotos' id='ul'>NO DRIVERS(S) MAY ENTER DATA</h3>
           <h2 id='s'> until stopped safely* / MSM**</h2>
@@ -29,7 +29,6 @@ const RegRules = () => {
         </div>
       </div>
       <div>
-        
         <ul className='credits'>
           <h3 >Rules Photo Credits from UnSplash</h3>
           <br />

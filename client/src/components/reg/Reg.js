@@ -53,40 +53,40 @@ const Reg = ({
           <h1 className='large my-2' id='site'>A little bit about our (my) site</h1>
           <div id='carrules'>
             <div>
-              <Link className='btn btn-danger' to='/reg-rules'>Rules & Regulations</Link>
+              <Link className='btn btn-danger filter' to='/reg-rules'>Rules & Regulations</Link>
               <div className='reg-3'>
                 <p>Who should be using it & rules</p>
-                <p>Other modes of transport e.g. pogo sticks, enough carrier pigeons etc.</p>
+                <p>Other modes of transport e.g. pogo sticks, sufficient carrier pigeons etc.</p>
               </div>
             </div>
             <br />
             <div>
-              <Link className='btn btn-danger' to='/reg-help'>Why people should be helpful</Link>
+              <Link className='btn btn-danger filter' to='/reg-help'>Why people should be helpful</Link>
               <div className='reg-3'>
                 <p>Why be helpful?</p>
-                <p>Don't sign up! Leave my database alone. Go on, bugger off..</p>
+                <p>Don't need to sign up to help someone</p>
               </div>
             </div>
             <br />
             <div>
-              <Link className='btn btn-danger' to='/reg-search'>Search for your car</Link>
+              <Link className='btn btn-danger filter' to='/reg-search'>Search for your car</Link>
               <div className='reg-3'>
                 <p>This way to search for your car, or a family member or friend's</p>
               </div>
             </div>
             <br />
             <div id='carsafety'>
-              <Link className='btn btn-danger' to='/reg-safety'>Car stats about accients 2018</Link>
+              <Link className='btn btn-danger filter' to='/reg-safety'>Car stats about accidents 2018</Link>
               <div className='reg-3'>
-              <p>Maybe some stats about broken car parts in the uk </p>
-              <p>Could copy the table over from website (crediting it of course)</p>
+              <a rel='noopener noreferrer' target='_blank' href='https://www.gov.uk/government/collections/road-accidents-and-safety-statistics' ><p>Accident reports from The Department of Transport Statistics </p></a>
+              <p>RAS50002 & RAS20002 DOT Statistics</p>
               </div>
             </div>
             <br />
             <div>
-              <Link className='btn btn-danger' to='/'>Landing page</Link>
+              <Link className='btn btn-danger filter' to='/'>Landing page</Link>
               <div className='reg-3'>
-              <p>Apparently red buttons are pretty hip... back to the start</p>
+              <p>Apparently red buttons are pretty hip... not sure what else to put here</p>
               </div>
             </div>
           </div>
