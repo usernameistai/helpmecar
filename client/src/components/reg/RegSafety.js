@@ -65,6 +65,10 @@ const RegSafety = () => {
       <br />
       <hr />
       <br />
+      <ul>
+        <li>Data and map from <a rel='noopener noreferrer' target='_blank' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/800502/vehicle-licensing-statistics-2018.pdf'>Vehicle Licensing Statistics: Annual 2018</a> release</li>
+      </ul>
+      <div className='text-primary'><h4>Map of licensed vehicles per 1000 head of population by unitary authority, Uniten Kingdom, 2018</h4></div>
       <div className='container-reg2'>
         <div id='car-d' />
       </div>
