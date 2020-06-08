@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 const RegRules = () => {
+
   return (
     <Fragment>
       <div>
@@ -10,10 +11,11 @@ const RegRules = () => {
           <h2 className='large r'>Rules <span id='uls'>(Please don't break them)</span> </h2>
           <h3 className='regrule-item rrphotos' id='ul'>NO DRIVERS(S) MAY ENTER DATA</h3>
           <h2 id='s'> until stopped safely* / MSM**</h2>
-          <p id='p'>It is down to the discretion of the people using this site and their own integrity as whether or not to abide by the following rules </p>
-          <p id='p'>The whole point of life is the ability to reflect and for introspection. This site hopes people are acting and behaving like people of the future. 
-            Everyone working together and helping each other, not putting people down and being judgemental like many can be in this self-promoting social media in which we live.</p>
-          <p id='p'>You can't help it being caught up in the wheels of social media and ones self-promoted digital-self, well of course you can and at some point you might even wake up.</p>
+          <p id='p'>Strictly no drivers can use this site, this needs to be emphasised (repetion is usually a good way, seven times it appears to be). No drivers </p>
+          <p id='p'>One aspect of human consciousness is the ability to reflect and for introspection. The future of humankind depends on you all being or becoming people that are acting and behaving like people of the future. 
+            Everyone working together and helping each other, not putting people down and making life harder for people, life is hard enough at times</p>
+          <p id='p'>One world. One race </p>
+          <p id='p'>(unless you're a giraffe or some other creature, a herring might also not have the same struggles (a shrubbery is a different matter altogether("what about swallows?"("what do you mean, African or European?"))))  </p>
           <ul className='regrule'>
             <h4 className='regrule-item rrphotos' id='px'>People allowed to enter data include the following : -</h4>
             <li className='regrule-item rrphotos' id='lp'>Passengers in cars & lorries, not on motorcycles</li>
@@ -26,6 +28,7 @@ const RegRules = () => {
             <li className='regrule-item rrphotos' id='pdp'>People who don't take life seriously</li>
             <li className='regrule-item rrphotos' id='dh'>Anyone who wants to help</li>
           </ul>
+          <p id='p'>Remember, no drivers to use this site, please</p>
         </div>
       </div>
       <div>
@@ -42,10 +45,11 @@ const RegRules = () => {
           <li>Magnificent Waterfall - <strong>Josh Gordon</strong></li>
           <li>Four Gents Laughing at Computer- <strong>Priscilla Du Preez</strong></li>
           <li>Smiling Helpful lady - <strong>David Hurley</strong></li>
+          <li>Not a picture of someone not driving - <strong>I.M.Notdriving</strong></li>
         </ul>
         <br />
-        <h3 className='msm'>* Pulled over correctly and safely and are not blocking traffic</h3>
-        <h3 className='msm'>**MSM - Mirror Signal Manoeuvre</h3>
+        <h3 className='msm'>* Pulled over correctly and safely and are not blocking traffic, so not driving</h3>
+        <h3 className='msm'>**MSM - Mirror Signal Manoeuvre (this is still driving, so not this)</h3>
         <div className='my-2 btnrules'>
           <Link className='btn btn-success' to='/reg'>Car Help Home</Link>
           <Link className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</Link>
@@ -77,12 +81,14 @@ const RegRules = () => {
           <li>Reflection of Car on Mobile Screen Lying on Keyboard - <strong>Tarun Dhiman</strong></li>
           <li>Little Boy Laughing on Bench with Book - <strong>Ben White</strong></li>
           <li>A Happy Man as People Should Be - <strong>Charles Etoroma</strong></li>
+          <li>Remember, nnnnooo drivers - <strong>I.M.Notdriving</strong></li>
         </ul>
         <br />
         <div className='my-2 btnrules'>
           <Link className='btn btn-success' to='/reg'>Car Help Home</Link>
           <Link className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</Link>
         </div> 
+        <p id='p'>No drivers, is this the seventh time?</p>
       </div>
     </Fragment>
   )

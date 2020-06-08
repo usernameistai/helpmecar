@@ -6,6 +6,7 @@ import { addReg } from '../../actions/reg';
 
 // added in regId
 const RegForm = ({ addReg, reg, regId }) => {
+
   const [formData, setFormData] = useState({
     regplate: '', brakelightcentre: false, brakelightleft: false, brakelightright: false,
     lightleft: false, lightright: false, reglight: false, indbrokenoneside: false,

@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import Navbar from './components/layout/Navbar';
-import FooterPagePro from './components/layout/Footer';
+import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
@@ -49,6 +50,7 @@ const App = () => {
           <Route exact={true} path='/' component={ Landing } /> {/* added exact={true} */}
           <section className='container'>
             <Alert />
+            <ScrollToTop />
             <Switch>
               <Route exact path='/register' component={ Register } />
               <Route exact path='/login' component={ Login } />
@@ -70,7 +72,7 @@ const App = () => {
               <Route exact path='/reg-safety' component={ RegSafety } />
             </Switch>
           </section>
-          <FooterPagePro />
+          <Footer />
         </Fragment>
       </Router>
     </Provider>

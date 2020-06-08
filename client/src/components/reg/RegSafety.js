@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 const RegSafety = () => {
+  
   return (
     <Fragment>
       <h1 className='text-primary large'>HelpMe - Car Safety</h1>

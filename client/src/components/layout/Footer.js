@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { MDBCol, MDBContainer, MDBFooter } from 'mdbreact';
 
-const FooterPagePro = () => {
+const Footer = () => {
   return (
     <Fragment>
       <MDBFooter className='fbc'>
@@ -44,4 +44,4 @@ const FooterPagePro = () => {
   );
 }
 
-export default FooterPagePro;
+export default Footer;

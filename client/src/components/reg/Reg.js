@@ -2,9 +2,6 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-// import { getReg } from '../../actions/reg';
-// import SearchReg from './SearchReg';
-
 
 const Reg = ({ 
   reg:{ reg,  regplate }
@@ -57,6 +54,7 @@ const Reg = ({
               <div className='reg-3'>
                 <p>Who should be using it & rules</p>
                 <p>Other modes of transport e.g. pogo sticks, sufficient carrier pigeons etc.</p>
+                <p>It is illegal to use your phone whilst driving</p>
               </div>
             </div>
             <br />
@@ -64,7 +62,7 @@ const Reg = ({
               <Link className='btn btn-danger filter' to='/reg-help'>Why people should be helpful</Link>
               <div className='reg-3'>
                 <p>Why be helpful?</p>
-                <p>Don't need to sign up to help someone</p>
+                <p>Don't need to sign up to help someone (bugger off from using my database)</p>
               </div>
             </div>
             <br />

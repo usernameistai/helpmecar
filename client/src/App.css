@@ -806,7 +806,7 @@ button {
 #ul {
   background-image: url('./components/layout/Urban-Landscape.jpeg');
   background-repeat: no-repeat;
-  background-size: 125%;
+  background-size: 100%;
   background-position: center;
   font-weight: bolder;
   text-shadow: 2px 2px 3px  #333;
@@ -816,6 +816,7 @@ button {
   font-size: 2.00rem;
   margin-bottom: 2.5rem;
   text-align: center;
+  z-index: 99;
 }
 
 #uls {
@@ -924,6 +925,8 @@ button {
   font-size: 1.88rem;
 }
 
+/* Regulations */
+
 #nft {
   grid-area: nft;
 }
@@ -995,7 +998,7 @@ button {
 
 #sm {
   background-image: url(./components/layout/sincerely-media.jpg);
-  background-size: 110%;
+  background-size: 90%;
   grid-area: sm;
 }
 
@@ -1384,13 +1387,14 @@ button {
   .regreg-item {
     font-size: 1.22rem;
     margin: auto;
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .rregphotos {
     margin: 0 auto;
     height: 30vh;
     width: 100%;
+    background-size: 125%;
   }
 
   .btnrules {
