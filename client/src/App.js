@@ -23,6 +23,7 @@ import ShowReg from './components/reg/ShowReg';
 import RegRules from './components/reg/RegRules';
 import RegHelp from './components/reg/RegHelp';
 import RegSafety from './components/reg/RegSafety';
+import NotFound from './components/layout/NotFound'
 import PrivateRoute from './components/routing/PrivateRoute';
 
 // Redux
@@ -70,6 +71,7 @@ const App = () => {
               <Route exact path='/reg-rules' component={ RegRules } />
               <Route exact path='/reg-help' component={ RegHelp } />
               <Route exact path='/reg-safety' component={ RegSafety } />
+              <Route component={NotFound} />
             </Switch>
           </section>
           <Footer />
