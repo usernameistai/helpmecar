@@ -68,7 +68,6 @@ blockquote p::after {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
 .container-reg2 {
   max-width: 100vw;
   margin-top: 2rem;
@@ -78,9 +77,8 @@ blockquote p::after {
   border-radius: 8px;
   border-style: solid;
   border-color: transparent;
-  box-shadow: 1px 1px 12px -5px #888;
+  box-shadow: inset 1px 1px 12px -5px #888;
 }
-
 .container-reg3 {
   background-color: #fff;
   opacity: 0.88;
@@ -91,11 +89,20 @@ blockquote p::after {
   border-radius: 8px;
   box-shadow: 1px 1px 12px -5px #888;
 }
-
 .container-reg4 {
   max-width: 100%;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+.container-reg5 {
+  max-width: 100vw;
+  margin: 2rem auto 3rem auto;
+  padding: 0.7rem;
+  border-width: 0 5px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: inset 1px 1px 12px -5px #888;
 }
 
 /* Text Styles*/
@@ -630,7 +637,7 @@ button {
 }
 
 .filter {
-  filter: drop-shadow(3px 3px 5px #fff);
+  filter: drop-shadow(3px 3px 5px black);
 }
 
 .reg-img1 {
@@ -729,6 +736,21 @@ button {
 .regrule-item:hover {
   transition: transform 0.44s ease-in-out;
   transform: scale(1.125);
+}
+
+.regrule-item2 {
+  max-width: 125%;
+  /* box-sizing: border-box; */
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.7rem;
+  border-width: 0 5px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 1px 1px 12px -5px #888;
+  /* justify-content: center;
+  vertical-align: center; */
 }
 
 .regreg-item {
@@ -1063,7 +1085,7 @@ button {
   grid-gap: 1.5rem;
   color: #fff;
   margin: -2rem -5rem 0 -2rem;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 5rem 3rem;
 }
 
 .reg-3 {
@@ -1107,7 +1129,7 @@ button {
   background-position: center;
   border-radius: 8px;
   /* box-shadow: 1px 1px 12px 5px #fff; */
-  filter: drop-shadow(-5px -5px 12px #fff);
+  /* filter: drop-shadow(5px 5px 15px black); */
   text-shadow: 1px 1px 5px #888;
   /* margin: 0; */
   margin: 0 -2rem 0 -18rem;

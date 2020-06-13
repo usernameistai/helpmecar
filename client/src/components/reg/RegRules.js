@@ -11,11 +11,13 @@ const RegRules = () => {
           <h2 className='large r'>Rules <span id='uls'>(Please don't break them)</span> </h2>
           <h3 className='regrule-item rrphotos' id='ul'>NO DRIVERS(S) MAY ENTER DATA</h3>
           <h2 id='s'> until stopped safely* / MSM**</h2>
-          <p id='p'>Strictly no drivers can use this site, this needs to be emphasised (repetion is usually a good way, seven times it appears to be). No drivers </p>
-          <p id='p'>One aspect of human consciousness is the ability to reflect and for introspection. The future of humankind depends on you all being or becoming people that are acting and behaving like people of the future. 
-            Everyone working together and helping each other, not putting people down and making life harder for people, life is hard enough at times</p>
-          <p id='p'>One world. One race </p>
-          <p id='p'>(unless you're a giraffe or some other creature, a herring might also not have the same struggles (a shrubbery is a different matter altogether("what about swallows?"("what do you mean, African or European?"))))  </p>
+          <div className='container-reg5'>
+            <p className='regrule-item2' id='p'>Strictly no drivers can use this site, this needs to be emphasised (repetion is usually a good way, seven times it appears to be). No drivers </p>
+            <p className='regrule-item2' id='p'>One aspect of human consciousness is the ability to reflect and for introspection. The future of humankind depends on you all being or becoming people that are acting and behaving like people of the future. 
+              Everyone working together and helping each other, not putting people down and making life harder for people, life is hard enough at times</p>
+            <p className='regrule-item2' id='p'>One world. One race </p>
+            <p className='regrule-item2'id='p'>(unless you're a giraffe or some other creature, a herring might also not have the same struggles (a shrubbery is a different matter altogether("what about swallows?"("what do you mean, African or European?"))))  </p>
+          </div>
           <ul className='regrule'>
             <h4 className='regrule-item rrphotos' id='px'>People allowed to enter data include the following : -</h4>
             <li className='regrule-item rrphotos' id='lp'>Passengers in cars & lorries, not on motorcycles</li>
@@ -51,8 +53,8 @@ const RegRules = () => {
         <h3 className='msm'>* Pulled over correctly and safely and are not blocking traffic, so not driving</h3>
         <h3 className='msm'>**MSM - Mirror Signal Manoeuvre (this is still driving, so not this)</h3>
         <div className='my-2 btnrules'>
-          <Link className='btn btn-success' to='/reg'>Car Help Home</Link>
-          <Link className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</Link>
+          <button className='btn btn-success' to='/reg'>Car Help Home</button>
+          <button className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</button>
         </div> 
       </div>
       <br />

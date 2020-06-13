@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getReg } from '../../actions/reg';
 
@@ -51,7 +51,7 @@ const SearchReg = ({
                   />
                   <div>
                     <input className='btn btn-primary mb-2' type='submit' value='Search'/>
-                    <Link className='btn btn-danger mb-2' to='/reg'>Go Back</Link> 
+                    <button className='btn btn-danger mb-2' to='/reg'>Go Back</button> 
                   </div> 
                 </div>
               </form>
