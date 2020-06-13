@@ -50,6 +50,12 @@ blockquote p::after {
   content: '\201D';
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
 /* Utilities */
 .container {
   max-width: 1100px;

@@ -284,7 +284,7 @@ const RegForm = ({ addReg, reg, regId }) => {
               </div>
               <br />
             </div>
-            <div className='form-group'>
+            <div>
               <input 
               type='submit' 
               value=' Help This Car ' 
