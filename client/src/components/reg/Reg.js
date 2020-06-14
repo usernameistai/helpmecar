@@ -26,7 +26,7 @@ const Reg = ({
           
           <li className='form reg-item' id='help'>
             <h3 className='form-text my-1 '>Help Someone's Car</h3>
-            <p>This way to help out a fellow humans car, enter some basic info about their car to help</p>
+            <p>This way to help out a fellow humans car, enter some basic info about their car</p>
             <div className='reg-link'>
               <Link className='btn btn-primary' to='/reg-form'>
                 Help Me

@@ -1267,7 +1267,7 @@ button {
   .navbar ul {
     text-align: center;
     justify-content: center;
-    margin: 0 auto 0  -2rem;
+    margin: 0 auto ; /*0  -2rem; */
   }
 
   .navbar h1 {
@@ -1277,6 +1277,11 @@ button {
 
   .navbar .welcome {
     display: none;
+  }
+
+  .nav {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Profiles Page */
