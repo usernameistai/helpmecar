@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { withRouter } from 'react-router-dom'; /* Link, */
+import { Link, withRouter } from 'react-router-dom'; /* Link, */
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addReg } from '../../actions/reg';
@@ -290,9 +290,9 @@ const RegForm = ({ addReg, reg, regId }) => {
               value=' Help This Car ' 
               className='btn btn-success'
               />
-              <button className='btn btn-light my-1' to='/reg'>
+              <Link className='btn btn-light my-1' to='/reg'>
                 Go Back
-              </button>
+              </Link>
             </div> 
             <h3 className='form-text'>And that's it, you've helped someone out</h3>
           </form>
