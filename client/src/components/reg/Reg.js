@@ -16,7 +16,7 @@ const Reg = ({
         <ul className='reg'>
           <li className='form reg-item' id='search'>
             <h3 className='form-text my-1'>Search for Your Car</h3>
-            <p>See if anyone has helped your car, maybe you've helped someone else already</p>
+            <p>Please enter a registration number to see if anyone has information about your car</p>
             <div className='reg-link'>
               <Link className='btn btn-success' to='/reg-search'>
                 Regplate Search
@@ -26,7 +26,7 @@ const Reg = ({
           
           <li className='form reg-item' id='help'>
             <h3 className='form-text my-1 '>Help Someone's Car</h3>
-            <p>This way to help out a fellow humans car.. maybe someone has already helped you</p>
+            <p>This way to help out a fellow humans car, enter some basic info about their car to help</p>
             <div className='reg-link'>
               <Link className='btn btn-primary' to='/reg-form'>
                 Help Me
@@ -36,7 +36,7 @@ const Reg = ({
           
           <li className='form reg-item' id='other'>
             <h3 className='form-text my-1'> Site Information</h3>
-            <p>Information, Rules & Guidance. Photos of human decency and kindness</p>
+            <p>Important Information, Rules & Guidance about how to use this site safely</p>
             <div className='reg-link'>
               <Link className='btn btn-light' to='/reg-rules'>
                 Guidance
@@ -53,7 +53,7 @@ const Reg = ({
               <Link className='btn btn-danger filter' to='/reg-rules'>Rules & Regulations</Link>
               <div className='reg-3'>
                 <p>Who should be using it & rules</p>
-                <p>Other modes of transport e.g. pogo sticks, sufficient carrier pigeons etc.</p>
+                <p>Please do not use whilst driving (you shouldn't be reading this)</p>
                 <p>It is illegal to use your phone whilst driving</p>
               </div>
             </div>
@@ -62,7 +62,8 @@ const Reg = ({
               <Link className='btn btn-danger filter' to='/reg-help'>Why people should be helpful</Link>
               <div className='reg-3'>
                 <p>Why be helpful?</p>
-                <p>Don't need to sign up to help someone (bugger off from using my database)</p>
+                <p>Don't need to sign up to help someone</p>
+                <p>Be helpful </p>
               </div>
             </div>
             <br />
@@ -84,7 +85,7 @@ const Reg = ({
             <div>
               <Link className='btn btn-danger filter' to='/'>Landing page</Link>
               <div className='reg-3'>
-              <p>Apparently red buttons are pretty hip... not sure what else to put here</p>
+              <p>Apparently red buttons are pretty hip... </p>
               </div>
             </div>
           </div>

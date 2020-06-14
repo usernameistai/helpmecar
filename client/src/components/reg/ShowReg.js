@@ -80,7 +80,7 @@ const ShowReg = ({
               }
               
               <br />
-              <h3 className='form-text'>Humans said the following about your driving:-</h3>
+              <h3 className='form-text'>People said the following about your driving:-</h3>
               <br />
               { reg.superherodriver // reg.driver.
                 ? <div className='regform-item m-1'><p> Super Hero Driver - (Drives Impeccably People in Awe of Said Skill) </p></div> : null 

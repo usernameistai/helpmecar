@@ -301,6 +301,10 @@ input {
   margin: 1.5rem 0;
 }
 
+.btnrules {
+  text-align: center;
+}
+
 /* Overlay */
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -1026,7 +1030,7 @@ button {
 
 #sm {
   background-image: url(./components/layout/sincerely-media.jpg);
-  background-size: 90%;
+  background-size: 100%;
   grid-area: sm;
 }
 
@@ -1427,7 +1431,11 @@ button {
 
   .btnrules {
     text-align: center;
-    margin-top: 0;
+    display: block;
+  }
+
+  .btnrules button {
+    margin-top: 1rem;
   }
 
   .msm {

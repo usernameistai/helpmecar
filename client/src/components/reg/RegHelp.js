@@ -7,20 +7,20 @@ const RegHelp = () => {
     <Fragment>
       
       <div >
-      <h1 className='large text-primary my-0'>Here we help people via cars</h1>
+      <h1 className='large text-primary my-0'>Why should we be helpful here?</h1>
         <ul className='reghelp'>
           <li className='regrule-item rhphotos' id='sm'></li>
           <li className='regrule-item rhphotos' id='at'></li>
-          <li className='reghelp-item' id='smt'>People's safety is of the utmost importance. Please use this website safely</li>
-          <li className='reghelp-item' id='att'>Please try to not take photos of people's cars. This website is about helping your fellow human. We should be helpful with people</li>
+          <li className='reghelp-item' id='smt'>Sometimes by not being a hindrance we can effectively be helping, however we all often go one step further (let someone know they've got blue smoke)</li>
+          <li className='reghelp-item' id='att'>e.g. Simply let someone know their brake lights aren't working, could help prevent accidents by less driving time with faulty equipment (Please try to not take photos of people's cars) </li>
           <li className='regrule-item rhphotos' id='pxh'></li>
           <li className='regrule-item rhphotos' id='rk'></li>
-          <li className='reghelp-item' id='pxth'>Kids are allowed to help other humans here. (Under the watchful eye of a parent / guardian)</li>
-          <li className='reghelp-item' id='rkt'>You can have helped someone randomly... or someone you might know. Don't give up on your fellow humans, help them</li>
+          <li className='reghelp-item' id='pxth'>Kids get a kick out of genuinely helping, as are more switched on than ever therefore can help (under the watchful eye of a parent / guardian). They also have excellent observational skills</li>
+          <li className='reghelp-item' id='rkt'>You can have helped someone randomly, anonymously... or someone you might know. Don't give up on your fellow humans, especially during these current times (or if their indicators aren't working)</li>
           <li className='regrule-item rhphotos' id='mt'></li>
           <li className='regrule-item rhphotos' id='pc'></li>
-          <li className='reghelp-item' id='mtt'>Be.. excellent to each other... and..</li>
-          <li className='reghelp-item' id='pct'>Pick up your litter</li>
+          <li className='reghelp-item' id='mtt'>Be.. excellent to each other... </li>
+          <li className='reghelp-item' id='pct'>...and pick up your litter</li>
         </ul> 
       </div>
       <ul className='credits my-2'>
