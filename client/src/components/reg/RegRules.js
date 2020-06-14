@@ -53,8 +53,8 @@ const RegRules = () => {
         <h3 className='msm'>* Pulled over correctly and safely and are not blocking traffic, so not driving</h3>
         <h3 className='msm'>**MSM - Mirror Signal Manoeuvre (this is still driving, so not this)</h3>
         <div className='my-1 btnrules'>
-          <button className='btn btn-success' to='/reg'>Car Help Home</button>
-          <button className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</button>
+          <Link className='btn btn-success m' to='/reg'>Car Help Home</Link>
+          <Link className='btn btn-primary m' to='/reg-help'>The Point of Being Helpful</Link>
         </div> 
       </div>
       <br />
@@ -85,10 +85,9 @@ const RegRules = () => {
           <li>A Happy Man as People Should Be - <strong>Charles Etoroma</strong></li>
           <li>Remember, nnnnooo drivers - <strong>I.M.Notdriving</strong></li>
         </ul>
-        <br />
         <div className='my-1 btnrules'>
-          <button className='btn btn-success' to='/reg'>Car Help Home</button>
-          <button className='btn btn-primary' to='/reg-help'>The Point of Being Helpful</button>
+          <Link className='btn btn-success m' to='/reg'>Car Help Home</Link>
+          <Link className='btn btn-primary m' to='/reg-help'>The Point of Being Helpful</Link>
         </div> 
         <p id='p'>No drivers, is this the seventh time?</p>
       </div>
