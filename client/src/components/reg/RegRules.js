@@ -12,9 +12,9 @@ const RegRules = () => {
           <h3 className='regrule-item rrphotos' id='ul'>NO DRIVERS(S) MAY ENTER DATA</h3>
           <h2 id='s'> until stopped safely* / MSM**</h2>
           <div className='container-reg5'>
-            <p className='regrule-item2' id='p'>Strictly no drivers can use this site, this needs to be emphasised (repetion is usually a good way, seven times it appears to be). No drivers </p>
-            <p className='regrule-item2' id='p'>One aspect of human consciousness is the ability to reflect and for introspection. The future of humankind depends on you all being or becoming people that are acting and behaving like people of the future. 
-              Everyone working together and helping each other, not putting people down and making life harder for people, life is hard enough at times</p>
+            <p className='regrule-item2' id='p'>Strictly no drivers currently driving may use this site's functionality please, we do not want people crashing </p>
+            <p className='regrule-item2' id='p'>One aspect of human thought is reflection and for introspection. We need to look to the future with something to aim for, once people stop focussing on this or that.
+              Everyone should work together and help each other, not put people down and make life harder for people, life is hard enough at times</p>
             <p className='regrule-item2' id='p'>One world. One race </p>
             <p className='regrule-item2'id='p'>(unless you're a giraffe or some other creature, a herring might also not have the same struggles (a shrubbery is a different matter altogether("what about swallows?"("what do you mean, African or European?"))))  </p>
           </div>
@@ -65,11 +65,11 @@ const RegRules = () => {
           <li className='regreg-item p-1' id='nft'><p>Generally following the laws laid down in the <span><Link to='https://www.gov.uk/browse/driving/highway-code-road-safety'> High Way Code </Link></span> will ensure no problems when driving, apart from other cars. Let's hope their equipment isn't faulty!</p></li>
           <li className='regreg-item rregphotos' id='nf'></li>
           <li className='regreg-item rregphotos' id='cb'></li>
-          <li className='regreg-item p-1' id='cbt'><p>Every year humans must get their cars checked over as we have to pass our <span><Link to='https://www.gov.uk/check-mot-status'> MOT Test</Link></span> , wherein said faults will have been sorted (we hope) or our cars can become fossils</p></li>
-          <li className='regreg-item p-1' id='tdt'><p>The point of this site is mainly human and car safety. Hopefully with working lights and other elements we might stay safer, get in less accidents and incur less costs</p></li>
+          <li className='regreg-item p-1' id='cbt'><p>Every year we must get our cars checked to be officially road worthy to pass our <span><Link to='https://www.gov.uk/check-mot-status'> MOT Test</Link></span> , wherein said faults will have been sorted (we hope) or our cars can become fossils</p></li>
+          <li className='regreg-item p-1' id='tdt'><p>The point of this site is mainly human and car safety, hopefully with working lights and other elements we might stay safer, get in less accidents and incur less costs</p></li>
           <li className='regreg-item rregphotos' id='td'></li>
           <li className='regreg-item rregphotos' id='bw'></li>
-          <li className='regreg-item p-1' id='bwt'><p>At some point in our lives this was us, devoid of bad, then we started believing in the cynicisms and pointless victories sought that adulthood seems only to hold. Be more little boy or girl</p></li>
+          <li className='regreg-item p-1' id='bwt'><p>At some point in our lives we were happy little children, then cynicism and seeing each other as not equal takes hold. We're taught to try to be better than your fellow human. Be more little boy or girl</p></li>
           <li className='regreg-item p-1' id='cet'><p>Now is the time to start smiling, now is the time to help each other, now is the time to forget this and that and just be the helpful selfless human that is inside you</p></li>
           <li className='regreg-item rregphotos' id='ce'></li>
         </ul>
