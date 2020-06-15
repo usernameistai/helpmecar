@@ -24,7 +24,7 @@ const RegForm = ({ addReg, reg, regId }) => {
   superherodriver, gooddriver, roomforimprov } = formData;
 
   const onChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value.toUpperCase() }); //toUpperCase()
   };
 
   const onSubmit = e => {
@@ -52,7 +52,7 @@ const RegForm = ({ addReg, reg, regId }) => {
                 required
               />
               <small className='form-text'>
-                Please enter registration number, public or private
+                Please enter registration number, public or private (no spaces please and in capitals)
               </small>
               <br />
               <div className='regform-item'>
