@@ -482,6 +482,9 @@ button {
   justify-content: center;
   text-align: center;
 }
+.lan {
+  margin-top: 3rem;
+}
 
 /* Profiles Page */
 .profile {
