@@ -231,6 +231,12 @@ blockquote p::after {
   color: #333;
 }
 
+.noapp {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .btn-primary,
 .bg-primary,
 .badge-primary,

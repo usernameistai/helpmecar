@@ -80,9 +80,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => { // destructured,
             minLength='6'
           />
         </div>
-        <input type='submit' className='btn btn-primary' value='Register' />
+        <input type='submit' className='btn btn-primary noapp' value='Register' />
       </form>
-      <p className='my-1'>
+      <p className='my-2'>
         Already have an account? <Link to='/login'>Sign In</Link>
       </p>
     </Fragment>
