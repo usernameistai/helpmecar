@@ -127,6 +127,7 @@ blockquote p::after {
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--dark-color);
 }
 
 .text-center {
@@ -245,9 +246,9 @@ blockquote p::after {
   color: #fff;
 }
 
-.bg-primopaque {
-  background: var(--primary-color);
-  opacity: 0.7;
+.bg-combine {
+  /* background: var(--primary-color); */
+  background: #55d6be;
   z-index: 0.1;
 
 }
@@ -294,7 +295,7 @@ blockquote p::after {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.88;
   box-shadow: 1px 1px 12px -5px #333;
   transform: scale(1.025);
 }
@@ -664,6 +665,8 @@ button {
 
 .filter {
   filter: drop-shadow(3px 3px 5px black);
+  /* font-weight: bold; */
+  /* color: var(--dark-color); */
 }
 
 .reg-img1 {
@@ -704,6 +707,7 @@ button {
   border-color: transparent;
   box-shadow: 1px 1px 12px -5px #888;
   background-color: #fff;
+  z-index: 99;
 }
 
 .reg-item:hover {
@@ -815,8 +819,8 @@ button {
   padding: 1rem;
   margin: auto auto 2rem auto;
   border-radius: 5px;
-  background-color: #2ecc40;
-  color: #dddddd;
+  background-color: #55d6be;
+  color: var(--dark-color);
   text-align: center;
 }
 
@@ -875,6 +879,7 @@ button {
   margin: -2rem auto 2rem auto;
   text-align: center;
   font-size: 1rem;
+  color: var(--primary-color);
 }
 
 #p {
@@ -1117,10 +1122,13 @@ button {
 .reg-3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
 }
 #site {
   grid-area: site;
   /* width: 85%; */
+  color: var(--dark-color);
 }
 #carrules {
   grid-area: carrules;

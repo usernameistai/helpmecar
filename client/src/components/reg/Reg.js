@@ -46,7 +46,7 @@ const Reg = ({
         </ul> 
       </div>
       <div >
-        <div className='reg-two bg-dark'>
+        <div className='reg-two bg-combine'>
           <h1 className='large my-2' id='site'>A little bit about our site</h1>
           <div id='carrules'>
             <div>
@@ -85,7 +85,7 @@ const Reg = ({
             <div>
               <Link className='btn btn-danger filter' to='/'>Landing page</Link>
               <div className='reg-3'>
-              <p>Apparently red buttons are pretty hip... </p>
+              <p>Want to start from the beginning </p>
               </div>
             </div>
           </div>

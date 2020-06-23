@@ -13,10 +13,10 @@ const RegRules = () => {
           <h2 id='s'> until stopped safely* / MSM**</h2>
           <div className='container-reg5'>
             <p className='regrule-item2' id='p'>Strictly no drivers currently driving may use this site's functionality please, we do not want people crashing </p>
-            <p className='regrule-item2' id='p'>One aspect of human thought is reflection and for introspection. We need to look to the future with something to aim for, once people stop focussing on this or that.
-              Everyone should work together and help each other, not put people down and make life harder for people, life is hard enough at times</p>
-            <p className='regrule-item2' id='p'>One world. One race </p>
-            <p className='regrule-item2'id='p'>(unless you're a giraffe or some other creature, a herring might also not have the same struggles (a shrubbery is a different matter altogether("what about swallows?"("what do you mean, African or European?"))))  </p>
+            <p className='regrule-item2' id='p'>One aspect of human thought is reflection and for introspection. We thought it would be good to help out motorists who may not be able to check their own car.
+            When in a safe place, if viable please share what is observably wrong but only if safe to do so. You have just looked out for someone</p>
+            <p className='regrule-item2' id='p'>One world. One race. Lots of people with potentially faulty cars</p>
+            <p className='regrule-item2'id='p'>Remember to be courteous to drivers around you and drive safely </p>
           </div>
           <ul className='regrule'>
             <h4 className='regrule-item rrphotos' id='px'>People allowed to enter data include the following : -</h4>
