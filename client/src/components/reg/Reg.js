@@ -47,7 +47,7 @@ const Reg = ({
       </div>
       <div >
         <div className='reg-two bg-dark'>
-          <h1 className='large my-2' id='site'>A little bit about our (my) site</h1>
+          <h1 className='large my-2' id='site'>A little bit about our site</h1>
           <div id='carrules'>
             <div>
               <Link className='btn btn-danger filter' to='/reg-rules'>Rules & Regulations</Link>

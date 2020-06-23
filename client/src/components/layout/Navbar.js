@@ -50,8 +50,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   return (
-    <nav className='navbar bg-dark'>
-      <h1>
+    <nav className='navbar class bg-dark'>
+      <h1 className='nav'>
         <Link to='/'>
           <i className='fas fa-hands'></i> <Fragment></Fragment>
           <i className='fas fa-car-alt'></i> <Fragment></Fragment>

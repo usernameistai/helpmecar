@@ -49,7 +49,7 @@ const SearchReg = ({
                     onChange={e => onChange(e)}
                     required
                   />
-                  <div>
+                  <div className='sbtns'>
                     <input className='btn btn-primary mb-2' type='submit' value='Search'/>
                     <Link className='btn btn-danger mb-2' to='/reg'>Go Back</Link> 
                   </div> 

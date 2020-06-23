@@ -50,11 +50,11 @@ blockquote p::after {
   content: '\201D';
 }
 
-input {
+/* input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  }
+} */
 
 /* Utilities */
 .container {
@@ -237,6 +237,13 @@ input {
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
+}
+
+.bg-primopaque {
+  background: var(--primary-color);
+  opacity: 0.7;
+  z-index: 0.1;
+
 }
 
 .btn-light,
@@ -669,7 +676,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
-  margin: -4rem -2rem 1rem -2rem;
+  margin: -4rem -5rem 1rem -2rem;
   padding: 0;
   max-width: 300%;
 }
@@ -1335,6 +1342,12 @@ button {
       'search'
       'other';
   }
+  .reg-img2 {
+    height: 80vh;
+    margin: -4rem -2rem 1rem -2rem;
+    padding: 0;
+    max-width: 250%;
+  }
 
   .reg-two {
     grid-gap: 0.5rem;
@@ -1371,6 +1384,10 @@ button {
     padding: 0.25rem 0.25rem 0 0.25rem;
     max-width: 85%;
     max-height: 33vh;
+  }
+
+  .sbtns {
+    text-align: center;
   }
 
   .regrule {

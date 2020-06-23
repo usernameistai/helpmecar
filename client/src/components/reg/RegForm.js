@@ -37,10 +37,10 @@ const RegForm = ({ addReg, reg, regId }) => {
 
   return (
     <Fragment>
-      <h2 className='large text-primary'>HelpMe - Human</h2>
+      <h2 className='large text-primary'>HelpMe - out please</h2>
       <div className='container-reg2'>
         <div className='form'>
-          <div className='title text-primary'><h1>Help Your Fellow Humans Out</h1></div>
+          <div className='title text-primary'><h1>Help Out Your Fellow Humans</h1></div>
           <form className='form' onSubmit={e => onSubmit(e)} action='/reg'>
             <div className='form-group'>
               <input 
@@ -284,11 +284,11 @@ const RegForm = ({ addReg, reg, regId }) => {
               </div>
               <br />
             </div>
-            <div>
+            <div className='sbtns'>
               <input 
-              type='submit' 
-              value=' Help This Car ' 
-              className='btn btn-success'
+                type='submit' 
+                value=' Help This Car ' 
+                className='btn btn-success'
               />
               <Link className='btn btn-light my-1' to='/reg'>
                 Go Back
