@@ -16,7 +16,7 @@ const RegSafety = () => {
       <div className='container-reg2'>
        <div id='accidents' />
       </div>
-      <ul>
+      <ul className='textdar'>
         <li className='text-primary'><h4>The following are the potential top associated accidents with having faulty components</h4></li>
         <br />
         <li><blockquote><p>Driver / Rider failed to look properly - 40% of accidents in 2018</p></blockquote></li>
@@ -44,7 +44,7 @@ const RegSafety = () => {
       
       <p>The following data is from the <span><a rel='noopener noreferrer' target='_blank' href='https://www.gov.uk/government/statistical-data-sets/ras20-drivers-riders-and-vehicles-in-reported-road-accidents'> Department for Transport Statistics </a></span></p>
       <div className='text-primary'><h4>RAS20002 Drivers in reported accidents by gender, number injured, road user type and age, Great Britain, 2018</h4></div>
-      <div className='container-reg2'>
+      <div className='container-reg2 txtdar'>
         <div id='accidents2' />
         <ol>
           <li id='ol'><p>Includes cases where gender was not reported. <span id='sp'>Source: DfT STATS19</span></p></li>
@@ -52,7 +52,7 @@ const RegSafety = () => {
         </ol>
       </div>
       <div>
-        <ul>
+        <ul  className='textdar'>
           <li className='text-primary'>The table above shows two immediate patterns</li>
           <li><blockquote><p> Males are nearly twice as likely to be involved in accidents than females - 92005 compared to 55268 </p></blockquote></li>
           <br />
@@ -73,7 +73,7 @@ const RegSafety = () => {
         <div id='car-d' />
       </div>
       <br />
-      <ul>
+      <ul className='textdar'>
         <li>
         Vehicle Licensing Statistics: Annual 2018 - Page 9. 
         <blockquote><p> In the United Kingdom, there were 39.4 million licensed vehicles at the end of 2018.This figure was made of 32.5 million (83%) vehicles registered to an address in England, 1.9 million (5%) in Wales, 3.0 million (8%) in Scotland, and 1.2 million (3%) in Northern Ireland</p></blockquote>

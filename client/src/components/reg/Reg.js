@@ -16,7 +16,7 @@ const Reg = ({
         <ul className='reg'>
           <li className='form reg-item' id='search'>
             <h3 className='form-text my-1'>Search for Your Car</h3>
-            <p>Please enter a registration number to see if anyone has information about your car</p>
+            <p className='txtdar'>Please enter a registration number to see if anyone has information about your car</p>
             <div className='reg-link'>
               <Link className='btn btn-success' to='/reg-search'>
                 Regplate Search
@@ -26,20 +26,20 @@ const Reg = ({
           
           <li className='form reg-item' id='help'>
             <h3 className='form-text my-1 '>Help Someone's Car</h3>
-            <p>This way to help out a fellow humans car, enter some basic info about their car</p>
+            <p className='txtdar'>This way to help out a fellow humans car, enter some basic info about their car</p>
             <div className='reg-link'>
               <Link className='btn btn-primary' to='/reg-form'>
-                Help Me
+                Look out for someone
               </Link>
             </div>
           </li>
           
           <li className='form reg-item' id='other'>
             <h3 className='form-text my-1'> Site Information</h3>
-            <p>Important Information, Rules & Guidance about how to use this site safely</p>
+            <p className='txtdar'>Important Information, Rules & Guidance about how to use this site safely</p>
             <div className='reg-link'>
               <Link className='btn btn-light' to='/reg-rules'>
-                Guidance
+                Who should be using this site?
               </Link>
             </div>
           </li>

@@ -5,6 +5,7 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #2ecc40;
+  --coolg-color: #55d6be;
   /* #28a745 */
 }
 
@@ -129,6 +130,11 @@ blockquote p::after {
   margin-bottom: 1rem;
   color: var(--dark-color);
 }
+.leadland {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--coolg-color);
+}
 
 .text-center {
   text-align: center;
@@ -248,9 +254,12 @@ blockquote p::after {
 
 .bg-combine {
   /* background: var(--primary-color); */
-  background: #55d6be;
+  background: var(--coolg-color);
   z-index: 0.1;
-
+}
+.btn-combine {
+  background: var(--coolg-color);
+  color: var(--dark-color);
 }
 
 .btn-light,
@@ -718,6 +727,7 @@ button {
 
 .regform-item {
   max-width: 100%;
+  color: var(--dark-color);
   /* box-sizing: border-box; */
   margin-left: 5px;
   margin-right: 5px;
@@ -1192,6 +1202,10 @@ button {
   /* margin: auto; */
 }
 
+.txtdar {
+  color: var(--dark-color);
+}
+
 #ol {
   margin: 0.125rem 11.25rem 0.125rem 10.25rem; 
   font-size: 7px;
@@ -1278,7 +1292,7 @@ button {
     font-size: 2rem;
   }
 
-  .lead {
+  .lead, .leadland{
     font-size: 1rem;
   }
 

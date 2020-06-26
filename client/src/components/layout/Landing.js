@@ -13,8 +13,8 @@ const Landing = ({ auth: {isAuthenticated, loading} }) => {
       <div className='dark-overlay'>
         <div className='landing-inner'>
           <Link to='/reg' className='lan'><h1 className='x-large my-1'>HelpMe - Car (Please)</h1></Link>
-          <p className='lead'>
-            Create a helper profile or don't, share information about a car via the means of registration plate alone, we only want to help
+          <p className='leadland'>
+            Create a helper profile or don't. Share helpful information about someone's car, if it needs it
           </p>
           <div className='lead'>
             <Link to='/reg' className='btn btn-danger'>This Way To Help Someone's Car</Link>
