@@ -360,10 +360,24 @@ blockquote p::after {
   height: 4rem;
   border-radius: 2.5rem;
   border-style: solid;
-  border-color: transparent;
+  /* border-color: transparent; */
   box-shadow: 1px 1px 12px -5px #333;
   padding: 1.6rem 0.8rem 0.8rem 0.8rem;
   margin: 1rem;
+  transition:  opacity 0.2s ease-in;
+}
+
+.fm i:hover {
+  /* opacity: 0.88; */
+  /* box-shadow: 1px 1px 12px -5px #333; */
+  transform: scale(1.25);
+  
+}
+
+.fic:hover {
+  transform: scale(1.25);
+  box-shadow: 1px 1px 12px -5px #333;
+  /* transition:  opacity 0.2s ease-in; */
 }
 
 .fcb {
@@ -673,9 +687,11 @@ button {
 }
 
 .filter {
-  filter: drop-shadow(3px 3px 5px black);
+  /* filter: drop-shadow(3px 3px 5px #343a40); */
+  box-shadow: 1px 1px 12px -5px #333;
+  transition: opacity 0.2s ease-in;
   /* font-weight: bold; */
-  /* color: var(--dark-color); */
+  color: var(--coolg-color);
 }
 
 .reg-img1 {
@@ -798,7 +814,7 @@ button {
   /* border-width: 0 5px; */
   border-radius: 8px;
   font-size: 1.4rem;
-  color: #333;
+  color: var(--dark-color);
 }
 
 .reghelp {
@@ -871,7 +887,7 @@ button {
   background-size: 100%;
   background-position: center;
   font-weight: bolder;
-  text-shadow: 2px 2px 3px  #333;
+  text-shadow: 2px 2px 3px  black;
   height: 7.77rem;
   width: 100%;
   color: var(--primary-color);
@@ -897,12 +913,16 @@ button {
   color: #4d5863;
 }
 
+.rp {
+  color: var(--coolg-color);
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.88rem;
+}
+
 #px {
   grid-area: px;
   background-image: url(./components/layout/pan-xiaozhen.jpg);
-  color: #ff851b;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #ff851b; */
 }
 
 #lp {
@@ -910,9 +930,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), 
     url(./components/layout/luke-porter.jpg);
   opacity: 0.88;
-  color: #fff;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #fff; */
 }
 
 #vp {
@@ -920,9 +938,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), 
     url(./components/layout/vitor-pinto.jpg);
   opacity: 0.88;
-  color: #fff;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #fff; */
 }
 
 #tv {
@@ -930,17 +946,13 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)),
                     url(./components/layout/timo-volz.jpg);
   opacity: 0.88;
-  color: #ffdc00;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #ffdc00; */
 }
 
 #jd {
   grid-area: jd;
   background-image: url(./components/layout/jorge-dominguez.jpg);
-  color: #01ff70;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #01ff70; */
 }
 
 #jk {
@@ -948,9 +960,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
   url(./components/layout/jan-kopriva.jpg);
   opacity: 0.88;
-  color: #fff;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #fff; */
 }
 
 #ccr {
@@ -958,7 +968,8 @@ button {
   background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(./components/layout/caspar-camille-rubin.jpg);
   opacity: 0.88;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--coolg-color);
   text-shadow: 2px 2px 5px black;
   font-size: 1.88rem;
 }
@@ -967,25 +978,19 @@ button {
   grid-area: jg;
   background-image:  url(./components/layout/josh-gordon.jpg);
   opacity: 0.88;
-  color: #7fdbff;
-  text-shadow: 2px 2px 5px black;
-  font-size: 1.88rem;
+  /* color: #7fdbff; */
 }
 
 #pdp {
   grid-area: pdp;
   background-image: url(./components/layout/priscilla-du-preez.jpg);
-  color: #ff851b;
-  text-shadow: 2px 2px 3px black;
-  font-size: 1.88rem;
+  /* color: #ff851b; */
 }
 
 #dh {
   grid-area: dh;
   background-image: url(./components/layout/david-hurley.jpg);
-  color: #85144b;
-  text-shadow: 1px 1px 3px rgb(187, 255, 0);
-  font-size: 1.88rem;
+  /* color: #85144b; */
 }
 
 /* Regulations */
@@ -1530,14 +1535,17 @@ button {
   }
 
   .fbc {
-    margin: 1rem -2rem -2rem -2rem;
-    padding: 0.5rem;
-    padding: 0.05rem 0 0 0;
+    margin: 2rem -2rem -2rem -2rem;
+    padding: 0.75rem;
+    /* padding: 0.05rem 0 0 0; */
+    height: 8rem;
   }
 
   .fic {
     margin: -0.75rem 0.25rem 0 0.25rem;
+    /* margin: auto; */
     padding: 1rem 0.5rem 0.5rem 0.5rem;
+    /* padding: 0 auto; */
   }
 
   .fcb {

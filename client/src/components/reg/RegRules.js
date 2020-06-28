@@ -9,7 +9,7 @@ const RegRules = () => {
         <h1 className='text-primary large'>Rules & Regulations</h1>
         <div className='container-reg4'>
           <h2 className='large r'>Rules <span id='uls'>(Please don't break them)</span> </h2>
-          <h3 className='regrule-item rrphotos' id='ul'>NO DRIVERS(S) MAY ENTER DATA</h3>
+          <h3 className='regrule-item rrphotos' id='ul'>No driver(s) may enter data</h3>
           <h2 id='s'> until stopped safely* / MSM**</h2>
           <div className='container-reg5'>
             <p className='regrule-item2' id='p'>Strictly no drivers currently driving may use this site's functionality please, we do not want people crashing </p>
@@ -19,16 +19,16 @@ const RegRules = () => {
             <p className='regrule-item2'id='p'>Remember to be courteous to drivers around you and drive safely </p>
           </div>
           <ul className='regrule'>
-            <h4 className='regrule-item rrphotos' id='px'>People allowed to enter data include the following : -</h4>
-            <li className='regrule-item rrphotos' id='lp'>Passengers in cars & lorries, not on motorcycles</li>
-            <li className='regrule-item rrphotos' id='vp'>Cyclists (not currently cycling) </li>
-            <li className='regrule-item rrphotos' id='tv'>Pedestrians (not crossing the road)</li>
-            <li className='regrule-item rrphotos' id='jd'>People sitting on benches</li>
-            <li className='regrule-item rrphotos' id='jk'>People who have just recently stopped skateboarding or bmxing</li>
-            <li className='regrule-item rrphotos' id='ccr'>People with mobiles</li> 
-            <li className='regrule-item rrphotos' id='jg'>People who take life seriously</li>
-            <li className='regrule-item rrphotos' id='pdp'>People who don't take life seriously</li>
-            <li className='regrule-item rrphotos' id='dh'>Anyone who wants to help</li>
+            <h4 className='regrule-item rrphotos rp' id='px'>People allowed to enter data include the following : -</h4>
+            <li className='regrule-item rrphotos rp' id='lp'>Passengers in cars & lorries, not on motorcycles</li>
+            <li className='regrule-item rrphotos rp' id='vp'>Cyclists (not currently cycling) </li>
+            <li className='regrule-item rrphotos rp' id='tv'>Pedestrians (not crossing the road)</li>
+            <li className='regrule-item rrphotos rp' id='jd'>People sitting on benches</li>
+            <li className='regrule-item rrphotos rp' id='jk'>People who have just recently stopped skateboarding or bmxing</li>
+            <li className='regrule-item rrphotos rp' id='ccr'>People with mobiles</li> 
+            <li className='regrule-item rrphotos rp' id='jg'>People who take life seriously</li>
+            <li className='regrule-item rrphotos rp' id='pdp'>People who don't take life seriously</li>
+            <li className='regrule-item rrphotos rp' id='dh'>Anyone who wants to help</li>
           </ul>
           <p id='p'>Remember, no drivers to use this site, please</p>
         </div>
