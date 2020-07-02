@@ -102,6 +102,11 @@ blockquote p::after {
   margin-bottom: 3rem;
 }
 .container-reg5 {
+  background-image: linear-gradient(to right, #f4f4f4, white, #f4f4f4);
+    /* url(./components/layout/multi_car.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 100vw;
   margin: 2rem auto 3rem auto;
   padding: 0.7rem;
@@ -111,6 +116,11 @@ blockquote p::after {
   border-color: transparent;
   box-shadow: inset 1px 1px 12px -5px #888;
 }
+
+/* .shiny {
+  background: #fff;
+  z-index: 99999999;
+} */
 
 /* Text Styles*/
 .x-large {
@@ -797,6 +807,7 @@ button {
 .regrule-item2 {
   max-width: 125%;
   /* box-sizing: border-box; */
+  background: #fff; /* #f9f9f9; /* was #fff */
   margin-left: 5px;
   margin-right: 5px;
   padding: 0.7rem;
@@ -911,6 +922,7 @@ button {
 #p {
   margin: 1.5rem;
   color: #4d5863;
+  z-index: 99;
 }
 
 .rp {
