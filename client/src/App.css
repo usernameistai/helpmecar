@@ -91,7 +91,7 @@ blockquote p::after {
   opacity: 0.88;
   height: 20vh;
   width: 100%;
-  margin: -1rem auto;
+  margin: 1rem auto;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   box-shadow: 1px 1px 12px -5px #888;
@@ -1583,4 +1583,10 @@ button {
     font-size: 1.77rem;
   }
   
+}
+
+@media ( orientation: landscape) {
+  .container-reg3 {
+    height: 47.5vh;
+  }
 }
