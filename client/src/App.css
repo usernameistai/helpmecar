@@ -1589,4 +1589,16 @@ button {
   .container-reg3 {
     height: 47.5vh;
   }
+  .reg-item {
+    max-height: 47.5vh;
+    /* margin: 2rem; */
+    padding: 0.5rem;
+    size: 50%;
+  }
+  .landscape {
+    margin-top: 17.5rem;
+  }
+  .reg-four {
+    height: 25rem;
+  }
 }

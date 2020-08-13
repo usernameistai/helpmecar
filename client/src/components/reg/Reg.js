@@ -45,7 +45,7 @@ const Reg = ({
           </li>
         </ul> 
       </div>
-      <div >
+      <div className='landscape'>
         <div className='reg-two bg-combine'>
           <h1 className='large my-2' id='site'>A little bit about our site</h1>
           <div id='carrules'>
@@ -97,7 +97,7 @@ const Reg = ({
 
     </Fragment>
   )
-}
+};
 
 Reg.propTypes = {
   reg: PropTypes.object.isRequired
