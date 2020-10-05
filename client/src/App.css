@@ -722,8 +722,8 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
-  margin: -4rem -5rem 1rem -2rem;
+  height: 100vh;
+  margin: -4rem -5rem -5rem -2rem;
   padding: 0;
   max-width: 300%;
 }
@@ -1164,7 +1164,7 @@ button {
 #carimg {
   grid-area: comb;
   /* max-height: 75vw; */
-  max-width: 75%;
+  max-width: 85vw;
 }
 /* #carhelp{
   grid-area: carhelp;
@@ -1196,6 +1196,7 @@ button {
   margin: 0 -2rem 0 -18rem;
   padding: 1rem;
   height: 100%;
+  width: 35vw;
   border-radius: 10px;
 }
 
@@ -1417,12 +1418,14 @@ button {
   .reg-four {
     background-size: 133%;
     text-align: center;
-    /* max-width: 100%; */
+    width: 100%;
     height: 75vh;
     margin: 0rem auto;
     padding: -1.5rem;
     text-shadow: 1px 1px 5px #888;
   }
+
+
   .reg-link {
     margin: 1rem auto 0.5rem auto;
   }
@@ -1587,7 +1590,7 @@ button {
 
 @media ( orientation: landscape) {
   .container-reg3 {
-    height: 47.5vh;
+    height: 20vh;
   }
   .reg-item {
     max-height: 47.5vh;
@@ -1596,9 +1599,9 @@ button {
     size: 50%;
   }
   .landscape {
-    margin-top: 17.5rem;
+    margin-top: 7rem;
   }
   .reg-four {
-    height: 25rem;
+    height: 100vh;
   }
 }
