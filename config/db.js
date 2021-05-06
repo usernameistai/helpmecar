@@ -11,7 +11,8 @@ const connectDB = async () => {
         useCreateIndex: true ,
         useFindAndModify: false // may not need it
     }); 
-    // returns a promise so can put await in front of it, have to add the above objects otehrwise get depracation warnings
+    // returns a promise so can put await in front of it, 
+    // have to add the above objects otehrwise get depracation warnings
     console.log('MongoDB connected');
   } catch(err) {
     console.error(err.message);
@@ -19,5 +20,7 @@ const connectDB = async () => {
     process.exit(1);
   }
 }
+
+// There was a save I wasn't aware of, might be a problem here later
 
 module.exports = connectDB;

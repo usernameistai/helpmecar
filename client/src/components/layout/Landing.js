@@ -12,21 +12,33 @@ const Landing = ({ auth: {isAuthenticated, loading} }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <Link to='/reg' className='lan'><h1 className='x-large my-1'>HelpMe - Car (Please)</h1></Link>
+          <Link to='/reg' className='lan'><h1 className='x-large my-1'>HelpMe - Car</h1></Link>
           <p className='leadland'>
-            Create a helper profile or don't. Share helpful information about someone's car, if it needs it
+            Share helpful information about someone's car, if it needs it. Create a helper profile if you would like
           </p>
-          <div className='lead'>
-            <Link to='/reg' className='btn btn-danger'>This Way To Help Someone's Car</Link>
-          </div>    
+
           <div className='my-1'>
             <p>If you see a fault with someone's car, this is a way of letting them know</p>
             <p>Simply choose from a selection of various problems</p>
             <p>Help someone out</p>
           </div>
+
+          <div className='lead'>
+            <Link to='/reg' className='neon-button'>This Way To Help Someone's Car</Link>
+          </div>   
+
+          {/* <div className='lead'>
+            <Link to='/reg' className='btn btn-danger neon-button'>This Way To Help Someone's Car</Link>
+          </div>    */}
+
+
+
+
+
+          
           <Fragment> 
            {!isAuthenticated 
-              ? <div className='button'>
+              ? <div className='button my-1'>
                   <Link to='/register' className='btn btn-primary'>Sign Up</Link>
                   <Link to='/login' className='btn btn-light'>Login</Link>
                 </div> 
