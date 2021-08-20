@@ -7,7 +7,7 @@ const RegHelp = () => {
     <Fragment>
       
       <div >
-      <h1 className='large text-primary my-0'>Why should we be helpful here?</h1>
+      <h1 className='large text-primary my-0 lan'>Why should we be helpful here?</h1>
         <ul className='reghelp'>
           <li className='regrule-item rhphotos' id='sm'></li>
           <li className='regrule-item rhphotos' id='at'></li>

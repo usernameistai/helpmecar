@@ -6,11 +6,11 @@ const RegRules = () => {
   return (
     <Fragment>
       <div>
-        <h1 className='text-primary large'>Rules & Regulations</h1>
+        <h1 className='text-primary large lan'>Rules & Regulations</h1>
         <div className='container-reg4'>
           <h2 className='large r'>Rules <span id='uls'>(Please don't break them)</span> </h2>
           <h3 className='regrule-item rrphotos' id='ul'>No driver(s) may enter data</h3>
-          <h2 id='s'> until stopped safely* / MSM**</h2>
+          <h2 className="lan" id='s'> until stopped safely* / MSM**</h2>
           <div className='container-reg5'>
             <p className='regrule-item2' id='p'>Strictly no drivers currently driving may use this site's functionality please, we do not want people crashing </p>
             <p className='regrule-item2' id='p'>One aspect of human thought is reflection and for introspection. We thought it would be good to help out motorists who may not be able to check their own car.

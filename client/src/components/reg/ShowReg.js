@@ -24,7 +24,7 @@ const ShowReg = ({
   //   lightleft, lightright, reglight, indbrokenoneside,
   //   indbrokenbothsides, indonesideon, exblacksmoke,
   //   exbluesmoke, exwhitesmoke, tyreflatleft, tyreflatright,
-  //   superherodriver, gooddriver, roomforimprov
+  //   driver.superherodriver, driver.gooddriver, driver.roomforimprov
   // } = reg;
 
   return (
@@ -36,60 +36,60 @@ const ShowReg = ({
           <div className='form container-reg2'>
             
             <div className='form-group'>
-              <h1 className='title text-primary'>We have a message for you {reg.regplate} </h1>
+              <h1 className='title text-primary'>Message for owner of {reg.regplate} </h1>
               <h3 className='form-text'>It appears the following may be wrong with your car:-</h3>
               <br />
               { reg.brakelightcentre 
-                ? <div className='regform-item m-1'><p>Looks like your centre brake light is out</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Looks like your centre brake light is out</p></div> : null 
               }
               { reg.brakelightleft 
-                ? <div className='regform-item m-1'><p>Looks like your left brake light is out</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Looks like your left brake light is out</p></div> : null 
               }
               { reg.brakelightright 
-                ? <div className='regform-item m-1'><p>Looks like your right brake light is out</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Looks like your right brake light is out</p></div> : null 
               }
               { reg.lightleft 
-                ? <div className='regform-item m-1'><p>Looks like your left rear light is out</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Looks like your left rear light is out</p></div> : null 
               }
               { reg.lightright 
-                ? <div className='regform-item m-1'><p>Looks like your right rear light is out</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Looks like your right rear light is out</p></div> : null 
               }
               { reg.indbrokenoneside 
-                ? <div className='regform-item m-1'><p>One of your indicators is flashing</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>One of your indicators is flashing</p></div> : null 
               }
               { reg.indbrokenbothsides 
-                ? <div className='regform-item m-1'><p>Both your hazard lights are permanently on</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>Both your hazard lights are permanently on</p></div> : null 
               }
               { reg.indonesideon 
-                ? <div className='regform-item m-1'><p>One of your indicators is on continuously</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>One of your indicators is on continuously</p></div> : null 
               }
               { reg.exblacksmoke 
-                ? <div className='regform-item m-1'><p>You have some black smoke coming from your exhaust</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>You have some black smoke coming from your exhaust</p></div> : null 
               }
               { reg.exbluesmoke 
-                ? <div className='regform-item m-1'><p>You have some blue smoke coming from your exhaust</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>You have some blue smoke coming from your exhaust</p></div> : null 
               }
               { reg.exwhitesmoke 
-                ? <div className='regform-item m-1'><p>You have some white smoke coming from your exhaust</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>You have some white smoke coming from your exhaust</p></div> : null 
               }
               { reg.tyreflatleft 
-                ? <div className='regform-item m-1'><p>A tyre on your left hand side is flat or needs pumping up</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>A tyre on your left hand side is flat or needs pumping up</p></div> : null 
               }
               { reg.tyreflatright 
-                ? <div className='regform-item m-1'><p>A tyre on your right hand side is flat or needs pumping up</p></div> : null 
+                ? <div className='regform-item ri m-1'><p>A tyre on your right hand side is flat or needs pumping up</p></div> : null 
               }
               
               <br />
               <h3 className='form-text'>People said the following about your driving:-</h3>
               <br />
-              { reg.superherodriver // reg.driver.
-                ? <div className='regform-item m-1'><p> Super Hero Driver - (Drives Impeccably People in Awe of Said Skill) </p></div> : null 
+              { reg.driver.superherodriver // reg.driver.
+                ? <div className='regform-item ri m-1'><p> Super Hero Driver - (Drives Impeccably People in Awe of Said Skill) </p></div> : null 
               }
-              { reg.gooddriver // reg.driver.
-                ? <div className='regform-item m-1'><p> Good Driver - (Drives Safely and Courteously) </p></div> : null 
+              { reg.driver.gooddriver // reg.driver.
+                ? <div className='regform-item ri m-1'><p> Good Driver - (Drives Safely and Courteously) </p></div> : null 
               }
-              { reg.roomforimprov // reg.driver.
-                ? <div className='regform-item m-1'><p> Room For Improvement - (Not entirely Concentrating, Not 100% Safe Driver) </p></div> : null 
+              { reg.driver.roomforimprov // reg.driver.
+                ? <div className='regform-item ri m-1'><p> Room For Improvement - (Not entirely Concentrating, Not 100% Safe Driver) </p></div> : null 
               }
             </div>
             

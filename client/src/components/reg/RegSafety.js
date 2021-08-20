@@ -4,7 +4,7 @@ const RegSafety = () => {
   
   return (
     <Fragment>
-      <h1 className='text-primary large'>HelpMe - Car Safety</h1>
+      <h1 className='text-primary large lan'>HelpMe - Car Safety</h1>
       <ul>
         <li><blockquote><p>The best thing this site could hope to achieve is reduce the number of accidents on the road and the very least could help drivers ensure their car's are safe and roadworthy</p><span id='sp'> - me</span></blockquote></li>
       </ul>

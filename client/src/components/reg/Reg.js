@@ -9,7 +9,7 @@ const Reg = ({
 
   return (
     <Fragment>
-      <h1 className='large text-primary my-0'>HelpMe Car - Home</h1>
+      <h1 className='large text-primary my-0 lan'>HelpMe Car - Home</h1>
       <h2 className='lead'>A way to help fellow humans and potentially why...</h2>
 
       <div className='reg-img2'>
