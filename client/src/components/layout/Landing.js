@@ -12,7 +12,7 @@ const Landing = ({ auth: {isAuthenticated, loading} }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <Link to='/reg' className='lan'><h1 className='x-large my-1'>HelpMe - Car</h1></Link>
+          <Link to='/reg'><h1 className='x-large my-1 lan'>HelpMe - Car</h1></Link>
           <p className='leadland'>
             Share helpful information about someone's car, if it needs it. Create a helper profile if you would like
           </p>
