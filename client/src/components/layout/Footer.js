@@ -28,7 +28,7 @@ const Footer = () => {
               <i className='fab fa-instagram fa-2x'>
               </i>
             </Link>
-            <Link className='fic' to={{ pathname: '/https://www.pinterest.co.uk/' }} target='_blank'>
+            <Link className='fic' to={{ pathname: 'https://www.pinterest.co.uk/' }} target='_blank'>
               <i className='fab fa-pinterest fa-2x'> </i>
             </Link>
           </div>

@@ -16,7 +16,7 @@ const SearchReg = ({
   const [formData, setFormData] = useState({ regplate: '' });
 
   const onChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value }); // took out ...formData at start
+    setFormData({ ...formData, [e.target.name]: e.target.value.toUpperCase() }); // took out ...formData at start
   };
 
   const onSubmit = e => {

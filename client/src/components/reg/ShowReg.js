@@ -32,7 +32,7 @@ const ShowReg = ({
     { loading || reg === null
       ? <Spinner />
       : <Fragment>
-        <h1 className='large text-primary my-0'>Fault Show</h1>
+        <h1 className='large text-primary my-0 lan'>Fault Show</h1>
           <div className='form container-reg2'>
             
             <div className='form-group'>

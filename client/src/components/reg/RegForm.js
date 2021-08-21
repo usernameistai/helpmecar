@@ -37,7 +37,7 @@ const RegForm = ({ addReg, reg, regId }) => {
 
   return (
     <Fragment>
-      {/* <h2 className='large text-primary'>HelpMe - out please</h2> */}
+      <h2 className='large text-primary lan'>HelpMe - out please</h2>
       <div className='container-reg2'>
         <div className='form'>
           <div className='title text-primary'><h1>Help Out Your Fellow Humans</h1></div>
