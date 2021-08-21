@@ -1519,7 +1519,6 @@ button {
     text-shadow: 1px 1px 5px #888;
   }
 
-
   .reg-link {
     margin: 1rem auto 0.5rem auto;
   }
@@ -1532,6 +1531,11 @@ button {
   }
   .reg-item:hover {
     transform: scale(1);
+  }
+
+  .ri {
+    line-height: 1.5rem;
+    font-weight: 400;
   }
 
   .sbtns {
